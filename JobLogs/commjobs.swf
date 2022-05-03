@@ -1,0 +1,7 @@
+Job_name Submit Runtime Nodes Comment Perc
+1 0 10 128 /home/gagandeep/benchmark-matrices/miniAMR/comm_matrix-ipmpi-16-8.txt 90
+2 7 10 128 /home/gagandeep/benchmark-matrices/miniAMR/comm_matrix-tau-16-8.txt 90
+3 10 10 64 /home/gagandeep/benchmark-matrices/miniAMR/comm_matrix-ipmpi-8-8.txt 90
+4 10 10 256 /home/gagandeep/benchmark-matrices/miniAMR/comm_matrix-ipmpi-32-8.txt 90
+5 10 10 64 /home/gagandeep/benchmark-matrices/miniAMR/comm_matrix-tau-8-8.txt 90
+6 15 10 256 /home/gagandeep/benchmark-matrices/miniAMR/comm_matrix-tau-32-8.txt 90
