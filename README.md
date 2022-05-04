@@ -1,10 +1,9 @@
 # Proposed Algorithms
 The implementation consists of 4 node-allocation algorithms for the SLURM job scheduler. 
-The first three algorithms consider the job's communication behavior based on the communication patterns/underlying algorithms of different MPI collectives.
-The default and greedy algorithms are implemented in the Master branch. 
-The balanced and adaptive algorithms are implemented in the algo2 branch.
-
-The fourth algorithm considers the job's actual communication pattern by taking as input a (node x node) communication matrix denoting the total amount of communication between the nodes. It is implemented in the algo3 branch.
+* The first three algorithms consider the job's communication behavior based on the communication patterns/underlying algorithms of different MPI collectives.
+* The default and greedy algorithms are implemented in the Master branch. 
+* The balanced and adaptive algorithms are implemented in the algo2 branch.
+* The comm balanced considers the job's actual communication pattern by taking as input a (node x node) communication matrix denoting the total amount of communication between the nodes. It is implemented in the algo3 branch.
 
 ## Setup
 
@@ -48,18 +47,12 @@ bash prepare_run.sh combal
 ```
 
 ### Recording the Cost of Communication
-The code calculates the cost of communication and writes it to a file. It also records the nodes allocated to a job on different switches. To record the cost of communication and the switch-wise node allocation information of all jobs in a file, provide a valid path in the `/src/slurmctld/calc_hops.c`. Modify the following lines with valid paths:
+The code calculates the cost of communication and writes it to a file. It also records the nodes allocated to a job on different switches. To record the cost of communication and the switch-wise node allocation information of all jobs in a file, the environment variable SLURM_COST_DIR is used. Add the following line with the path of the folder where the files should be saved in the .bashrc file present in your home directory.
 ```
-void hop(struct job_record *job_ptr){
-        FILE *f;
-        f = fopen ("File for recording hops", "a");
-        .
-        .
-        FILE *info;
-        info = fopen("File for recording switch-wise node allocation","a");
+export SLURM_COST_DIR=/home/gagandeep/slurmcost
+```
+After adding the line, re-open the terminal to enforce the changes.
 
-}
-```
 ### Submitting Jobs
 When using the greedy or balanced algorithm, use the comment parameter of `sbatch` command to specify whether a job is communication-intensive or compute-intensive. 
 For a communication-intensive job use `--comment=1` and for compute-intensive use `--comment=0`. The sbatch command will be similar to this:
@@ -68,7 +61,7 @@ sbatch --job-name=test_job --comment=1 --nodes=4 jobfile
 ```
 When submitting jobs using the adaptive algorithm, in addition to specifying if a job is communication-intensive, also provide the commmunication pattern of the job. Currently, the code supports five communication-patterns: RHVD (Recursive-halving vector doubling), RD (Recursive doubling/halving), Binomial, Ring, and a pattern similar to CMC-2D (70% Binomial and 30% RD). The comment parameter for these patterns will be `--comment=1:1` for RHVD, `--comment=1:2` for RD, `--comment=1:3` for Binomial, `--comment=1:4` for Ring, and `--comment=1:5` for CMC-2D.
 
-When using the comm balanced algorithm, the communication matrix path for a job should be given in the comment as `--comment=1:/path/to/comm_matrix/mat.txt`. The first character of the comment denotes whether a job is communication-intensive (1) or compute-intensive (0).
+When using the comm balanced algorithm, the communication matrix path for a job should be given in the comment as `--comment=1:/path/to/comm_matrix/mat.txt` for a communication-intensive job and `--comment=0:/path/to/comm_matrix/mat.txt` for a compute-intensive job. The first character of the comment denotes whether a job is communication-intensive (1) or compute-intensive (0).
  
 ### Appendix
 Follow these steps to install and build SLURM and other required components:
@@ -101,16 +94,16 @@ Setup the database after installing Mariadb. Provide an appropriate username, da
 ```
 sudo mysql -u root
 create database slurm_acct_db;
-create user 'ubuntu'@'localhost';
-set password for 'ubuntu'@'localhost' = password('slurmdbpass');
-grant usage on *.* to 'ubuntu'@'localhost';
-grant all privileges on slurm_acct_db.* to 'ubuntu'@'localhost';
+create user 'gagandeep'@'localhost';
+set password for 'gagandeep'@'localhost' = password('slurmdbpass');
+grant usage on *.* to 'gagandeep'@'localhost';
+grant all privileges on slurm_acct_db.* to 'gagandeep'@'localhost';
 flush privileges;
 select user from mysql.user;
 ```
 The ouput from the last line should show the user added to the database.
 #### Clone the repository and build SLURM
-Clone the repository present [here](https://github.com/Priya2698/slurm_changes).
+Clone the repository present [here](https://github.com/gaganmangat/slurm_changes).
 Switch to the code-repository (We are assuming it is named slurm_changes) and run configure.
 ```
 cd slurm_changes
@@ -127,10 +120,10 @@ sudo make install
 Ensure that the build is successful.
 
 #### Create the required directories
-Create the required directories and change the owner to the SLURM user (here ubuntu).
+Create the required directories and change the owner to the SLURM user (here gagandeep).
 ```
 sudo mkdir -p /var/spool/slurmctld /var/spool/slurmd /var/log/slurm
-sudo chown ubuntu /var/spool/slurmctld /var/spool/slurmd /var/log/slurm
+sudo chown gagandeep /var/spool/slurmctld /var/spool/slurmd /var/log/slurm
 ```
 #### SLURM configuration files
 SLURM requires `slurm.conf` and `topology.conf` files to be present in `/usr/local/etc`. The service files should be present at `/etc/systemd/system`. These files have also been provided in this repository [here](./slurm_config_files). Before, using these files make necessary changes to the node names, node address and other fields as required.
