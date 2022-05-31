@@ -1,53 +1,53 @@
-BIN_SIZE: 10240
-BIN_SIZE: 10240
-BIN_SIZE: 10240
-BIN_SIZE: 10240
-BIN_SIZE: 10240
-BIN_SIZE: 10240
-BIN_SIZE: 10240
-BIN_SIZE: 10240
-BIN_SIZE: 10240
-BIN_SIZE: 10240
-BIN_SIZE: 10240
-BIN_SIZE: 10240
-BIN_SIZE: 10240
-BIN_SIZE: 10240
-BIN_SIZE: 10240
-BIN_SIZE: 10240
+BIN_SIZE: 102400
+BIN_SIZE: 102400
+BIN_SIZE: 102400
+BIN_SIZE: 102400
+BIN_SIZE: 102400
+BIN_SIZE: 102400
+BIN_SIZE: 102400
+BIN_SIZE: 102400
+BIN_SIZE: 102400
+BIN_SIZE: 102400
+BIN_SIZE: 102400
+BIN_SIZE: 102400
+BIN_SIZE: 102400
+BIN_SIZE: 102400
+BIN_SIZE: 102400
+BIN_SIZE: 102400
 [0] MPI startup(): Multi-threaded optimized library
-[0] MPI startup(): shm data transfer mode
-[7] MPI startup(): shm data transfer mode
-[8] MPI startup(): shm data transfer mode
-[9] MPI startup(): shm data transfer mode
-[11] MPI startup(): shm data transfer mode
-[13] MPI startup(): shm data transfer mode
-[14] MPI startup(): shm data transfer mode
+[10] MPI startup(): shm data transfer mode
 [15] MPI startup(): shm data transfer mode
+[9] MPI startup(): shm data transfer mode
+[13] MPI startup(): shm data transfer mode
+[0] MPI startup(): shm data transfer mode
+[8] MPI startup(): shm data transfer mode
+[11] MPI startup(): shm data transfer mode
+[12] MPI startup(): shm data transfer mode
+[14] MPI startup(): shm data transfer mode
 [1] MPI startup(): shm data transfer mode
 [2] MPI startup(): shm data transfer mode
 [3] MPI startup(): shm data transfer mode
 [4] MPI startup(): shm data transfer mode
 [5] MPI startup(): shm data transfer mode
 [6] MPI startup(): shm data transfer mode
-[10] MPI startup(): shm data transfer mode
-[12] MPI startup(): shm data transfer mode
+[7] MPI startup(): shm data transfer mode
 [0] MPI startup(): Rank    Pid      Node name         Pin cpu
-[0] MPI startup(): 0       14158    hm004.iitk.ac.in  0
-[0] MPI startup(): 1       14159    hm004.iitk.ac.in  1
-[0] MPI startup(): 2       14160    hm004.iitk.ac.in  2
-[0] MPI startup(): 3       14161    hm004.iitk.ac.in  3
-[0] MPI startup(): 4       14162    hm004.iitk.ac.in  4
-[0] MPI startup(): 5       14163    hm004.iitk.ac.in  5
-[0] MPI startup(): 6       14164    hm004.iitk.ac.in  6
-[0] MPI startup(): 7       14165    hm004.iitk.ac.in  7
-[0] MPI startup(): 8       14166    hm004.iitk.ac.in  24
-[0] MPI startup(): 9       14167    hm004.iitk.ac.in  25
-[0] MPI startup(): 10      14168    hm004.iitk.ac.in  26
-[0] MPI startup(): 11      14169    hm004.iitk.ac.in  27
-[0] MPI startup(): 12      14170    hm004.iitk.ac.in  28
-[0] MPI startup(): 13      14171    hm004.iitk.ac.in  29
-[0] MPI startup(): 14      14172    hm004.iitk.ac.in  30
-[0] MPI startup(): 15      14173    hm004.iitk.ac.in  31
+[0] MPI startup(): 0       27339    hm009.iitk.ac.in  0
+[0] MPI startup(): 1       27340    hm009.iitk.ac.in  1
+[0] MPI startup(): 2       27341    hm009.iitk.ac.in  2
+[0] MPI startup(): 3       27342    hm009.iitk.ac.in  3
+[0] MPI startup(): 4       27343    hm009.iitk.ac.in  4
+[0] MPI startup(): 5       27344    hm009.iitk.ac.in  5
+[0] MPI startup(): 6       27345    hm009.iitk.ac.in  6
+[0] MPI startup(): 7       27346    hm009.iitk.ac.in  7
+[0] MPI startup(): 8       27347    hm009.iitk.ac.in  24
+[0] MPI startup(): 9       27348    hm009.iitk.ac.in  25
+[0] MPI startup(): 10      27349    hm009.iitk.ac.in  26
+[0] MPI startup(): 11      27350    hm009.iitk.ac.in  27
+[0] MPI startup(): 12      27351    hm009.iitk.ac.in  28
+[0] MPI startup(): 13      27352    hm009.iitk.ac.in  29
+[0] MPI startup(): 14      27353    hm009.iitk.ac.in  30
+[0] MPI startup(): 15      27354    hm009.iitk.ac.in  31
 sendfunctionname: MPI_Send[0x405dd6] 160
 sendfunctionname: MPI_Send[0x405dd6] 3872
 sendfunctionname: MPI_Send[0x405dd6] 176

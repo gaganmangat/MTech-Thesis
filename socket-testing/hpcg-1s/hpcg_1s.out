@@ -1,17 +1,17 @@
 ==========================================
 SLURM_CLUSTER_NAME = iitk-cluster
 SLURM_JOB_ACCOUNT = paramsanganak
-SLURM_JOB_ID = 175961
+SLURM_JOB_ID = 175937
 SLURM_JOB_NAME = hpcg_1s
-SLURM_JOB_NODELIST = hm038
+SLURM_JOB_NODELIST = hm003
 SLURM_JOB_USER = gagandeep20
 SLURM_JOB_UID = 15436
 SLURM_JOB_PARTITION = standard
-SLURM_TASK_PID = 46151
+SLURM_TASK_PID = 34813
 SLURM_SUBMIT_DIR = /scratch/gagandeep20/socket-testing/hpcg-1s
 SLURM_CPUS_ON_NODE = 48
 SLURM_NTASKS = 16
-SLURM_TASK_PID = 46151
+SLURM_TASK_PID = 34813
 ==========================================
 Architecture:          x86_64
 CPU op-mode(s):        32-bit, 64-bit
@@ -27,7 +27,7 @@ CPU family:            6
 Model:                 85
 Model name:            Intel(R) Xeon(R) Platinum 8268 CPU @ 2.90GHz
 Stepping:              7
-CPU MHz:               1232.464
+CPU MHz:               1299.725
 CPU max MHz:           3900.0000
 CPU min MHz:           1200.0000
 BogoMIPS:              5800.00
@@ -39,24 +39,24 @@ L3 cache:              36608K
 NUMA node0 CPU(s):     0-23
 NUMA node1 CPU(s):     24-47
 Flags:                 fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch epb cat_l3 cdp_l3 intel_ppin intel_pt ssbd mba ibrs ibpb stibp ibrs_enhanced tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm cqm mpx rdt_a avx512f avx512dq rdseed adx smap clflushopt clwb avx512cd avx512bw avx512vl xsaveopt xsavec xgetbv1 cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local dtherm ida arat pln pts pku ospke avx512_vnni md_clear spec_ctrl intel_stibp flush_l1d arch_capabilities
-hm038
-[7] Wrapping up
-[3] Wrapping up
-[1] Wrapping up
+hm003
+[11] Wrapping up
+[4] Wrapping up
 [12] Wrapping up
 [15] Wrapping up
-[11] Wrapping up
-[0] Wrapping up
-[8] Wrapping up
-[4] Wrapping up
-[14] Wrapping up
-[10] Wrapping up
-[9] Wrapping up
-[5] Wrapping up
-[2] Wrapping up
-[6] Wrapping up
+[7] Wrapping up
+[3] Wrapping up
 [13] Wrapping up
-ipmpi run completed in 406 seconds with communication time percentage 2.04
+[10] Wrapping up
+[14] Wrapping up
+[5] Wrapping up
+[8] Wrapping up
+[6] Wrapping up
+[0] Wrapping up
+[9] Wrapping up
+[2] Wrapping up
+[1] Wrapping up
+ipmpi run completed in 405 seconds with communication time percentage 1.47
 comm_ipmpi_hpcg1s.mat  Created
 numprocs:  16
 count_ipmpi_hpcg1s  Created

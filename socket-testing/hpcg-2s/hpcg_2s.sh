@@ -4,7 +4,6 @@
 
 module load compiler/intel/2018.5.274
 module load python/3.6
-export BIN_SIZE=10240
 
 source $HOME/.ipmpi
 export PROFILE_DIR=./
