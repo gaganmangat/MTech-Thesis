@@ -1,0 +1,22 @@
+==========================================
+SLURM_CLUSTER_NAME = iitk-cluster
+SLURM_JOB_ACCOUNT = paramsanganak
+SLURM_JOB_ID = 164837
+SLURM_JOB_NAME = hpcg_16_8_2
+SLURM_JOB_NODELIST = cn[024,049-050,091-094,137-139,164-169]
+SLURM_JOB_USER = gagandeep20
+SLURM_JOB_UID = 15436
+SLURM_JOB_PARTITION = standard
+SLURM_TASK_PID = 22012
+SLURM_SUBMIT_DIR = /scratch/gagandeep20/benchmarks/hpcg/run2/16nodes-8ppn
+SLURM_CPUS_ON_NODE = 8
+SLURM_NTASKS = 128
+SLURM_TASK_PID = 22012
+==========================================
+cn[024,049-050,091-094,137-139,164-169]
+tau run completed in 339 seconds with communication time percentage 15.35
+comm_tau_hpcg_16_128_8_2.mat  Created
+ipmpi run completed in 391 seconds with communication time percentage 13.77
+comm_ipmpi_hpcg_16_128_8_2.mat  Created
+numprocs:  128
+count_ipmpi_hpcg_16_128_8_2  Created

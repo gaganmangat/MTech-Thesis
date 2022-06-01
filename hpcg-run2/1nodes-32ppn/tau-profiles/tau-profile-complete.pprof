@@ -1,0 +1,1631 @@
+Reading Profile files in profile.*
+
+NODE 0;CONTEXT 0;THREAD 0:
+---------------------------------------------------------------------------------------
+%Time    Exclusive    Inclusive       #Call      #Subrs  Inclusive Name
+              msec   total msec                          usec/call 
+---------------------------------------------------------------------------------------
+100.0     9:09.012     9:21.807           1       40225  561807951 .TAU application
+  1.0        5,742        5,742         546           0      10518 MPI_Allreduce() 
+  1.0        5,653        5,653       12075           0        468 MPI_Wait() 
+  0.2        1,316        1,316       12075           0        109 MPI_Send() 
+  0.0           48           48           1           0      48690 MPI_Init() 
+  0.0           20           20       12075           0          2 MPI_Irecv() 
+  0.0            7            7        1726           0          4 MPI_Comm_size() 
+  0.0            3            3           1           0       3146 MPI_Finalize() 
+  0.0            2            2        1726           0          1 MPI_Comm_rank() 
+---------------------------------------------------------------------------------------
+
+USER EVENTS Profile :NODE 0, CONTEXT 0, THREAD 0
+---------------------------------------------------------------------------------------
+NumSamples   MaxValue   MinValue  MeanValue  Std. Dev.  Event Name
+---------------------------------------------------------------------------------------
+       546          8          8          8          0  Message size for all-reduce
+ 1.208E+04  2.478E+05          8  4.625E+04  8.369E+04  Message size received from all nodes
+ 1.208E+04  2.478E+05          8  4.625E+04  8.369E+04  Message size received in wait
+ 1.208E+04  2.478E+05          8  4.625E+04  8.369E+04  Message size received in wait : MPI_Wait() 
+ 1.208E+04  2.478E+05          8  4.625E+04  8.369E+04  Message size sent to all nodes
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 1
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 1 : MPI_Send() 
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 16
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 16 : MPI_Send() 
+      1725       1280        160      751.5        435  Message size sent to node 17
+      1725       1280        160      751.5        435  Message size sent to node 17 : MPI_Send() 
+      1725       1408        176      826.6      478.5  Message size sent to node 20
+      1725       1408        176      826.6      478.5  Message size sent to node 20 : MPI_Send() 
+      1725          8          8          8          0  Message size sent to node 21
+      1725          8          8          8          0  Message size sent to node 21 : MPI_Send() 
+      1725  2.478E+05       3872   1.14E+05  1.055E+05  Message size sent to node 4
+      1725  2.478E+05       3872   1.14E+05  1.055E+05  Message size sent to node 4 : MPI_Send() 
+      1725       1408        176      826.6      478.5  Message size sent to node 5
+      1725       1408        176      826.6      478.5  Message size sent to node 5 : MPI_Send() 
+---------------------------------------------------------------------------------------
+
+NODE 1;CONTEXT 0;THREAD 0:
+---------------------------------------------------------------------------------------
+%Time    Exclusive    Inclusive       #Call      #Subrs  Inclusive Name
+              msec   total msec                          usec/call 
+---------------------------------------------------------------------------------------
+100.0     9:08.663     9:21.808           1       60925  561808451 .TAU application
+  1.1        6,036        6,036         546           0      11056 MPI_Allreduce() 
+  0.9        5,030        5,030       18975           0        265 MPI_Wait() 
+  0.3        1,866        1,866       18975           0         98 MPI_Send() 
+  0.0          124          124           1           0     124610 MPI_Finalize() 
+  0.0           48           48           1           0      48649 MPI_Init() 
+  0.0           28           28       18975           0          2 MPI_Irecv() 
+  0.0            6            6        1726           0          4 MPI_Comm_size() 
+  0.0            2            2        1726           0          1 MPI_Comm_rank() 
+---------------------------------------------------------------------------------------
+
+USER EVENTS Profile :NODE 1, CONTEXT 0, THREAD 0
+---------------------------------------------------------------------------------------
+NumSamples   MaxValue   MinValue  MeanValue  Std. Dev.  Event Name
+---------------------------------------------------------------------------------------
+       546          8          8          8          0  Message size for all-reduce
+ 1.898E+04  2.478E+05          8    3.9E+04  7.817E+04  Message size received from all nodes
+ 1.898E+04  2.478E+05          8    3.9E+04  7.817E+04  Message size received in wait
+ 1.898E+04  2.478E+05          8    3.9E+04  7.817E+04  Message size received in wait : MPI_Wait() 
+ 1.898E+04  2.478E+05          8    3.9E+04  7.817E+04  Message size sent to all nodes
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 0
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 0 : MPI_Send() 
+      1725       1280        160      751.5        435  Message size sent to node 16
+      1725       1280        160      751.5        435  Message size sent to node 16 : MPI_Send() 
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 17
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 17 : MPI_Send() 
+      1725       1280        160      751.5        435  Message size sent to node 18
+      1725       1280        160      751.5        435  Message size sent to node 18 : MPI_Send() 
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 2
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 2 : MPI_Send() 
+      1725          8          8          8          0  Message size sent to node 20
+      1725          8          8          8          0  Message size sent to node 20 : MPI_Send() 
+      1725       1408        176      826.6      478.5  Message size sent to node 21
+      1725       1408        176      826.6      478.5  Message size sent to node 21 : MPI_Send() 
+      1725          8          8          8          0  Message size sent to node 22
+      1725          8          8          8          0  Message size sent to node 22 : MPI_Send() 
+      1725       1408        176      826.6      478.5  Message size sent to node 4
+      1725       1408        176      826.6      478.5  Message size sent to node 4 : MPI_Send() 
+      1725  2.478E+05       3872   1.14E+05  1.055E+05  Message size sent to node 5
+      1725  2.478E+05       3872   1.14E+05  1.055E+05  Message size sent to node 5 : MPI_Send() 
+      1725       1408        176      826.6      478.5  Message size sent to node 6
+      1725       1408        176      826.6      478.5  Message size sent to node 6 : MPI_Send() 
+---------------------------------------------------------------------------------------
+
+NODE 2;CONTEXT 0;THREAD 0:
+---------------------------------------------------------------------------------------
+%Time    Exclusive    Inclusive       #Call      #Subrs  Inclusive Name
+              msec   total msec                          usec/call 
+---------------------------------------------------------------------------------------
+100.0     9:09.323     9:21.808           1       60925  561808505 .TAU application
+  1.0        5,690        5,690         546           0      10422 MPI_Allreduce() 
+  0.8        4,684        4,684       18975           0        247 MPI_Wait() 
+  0.3        1,919        1,919       18975           0        101 MPI_Send() 
+  0.0          104          104           1           0     104375 MPI_Finalize() 
+  0.0           48           48           1           0      48754 MPI_Init() 
+  0.0           27           27       18975           0          1 MPI_Irecv() 
+  0.0            6            6        1726           0          4 MPI_Comm_size() 
+  0.0            2            2        1726           0          1 MPI_Comm_rank() 
+---------------------------------------------------------------------------------------
+
+USER EVENTS Profile :NODE 2, CONTEXT 0, THREAD 0
+---------------------------------------------------------------------------------------
+NumSamples   MaxValue   MinValue  MeanValue  Std. Dev.  Event Name
+---------------------------------------------------------------------------------------
+       546          8          8          8          0  Message size for all-reduce
+ 1.898E+04  2.478E+05          8    3.9E+04  7.817E+04  Message size received from all nodes
+ 1.898E+04  2.478E+05          8    3.9E+04  7.817E+04  Message size received in wait
+ 1.898E+04  2.478E+05          8    3.9E+04  7.817E+04  Message size received in wait : MPI_Wait() 
+ 1.898E+04  2.478E+05          8    3.9E+04  7.817E+04  Message size sent to all nodes
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 1
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 1 : MPI_Send() 
+      1725       1280        160      751.5        435  Message size sent to node 17
+      1725       1280        160      751.5        435  Message size sent to node 17 : MPI_Send() 
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 18
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 18 : MPI_Send() 
+      1725       1280        160      751.5        435  Message size sent to node 19
+      1725       1280        160      751.5        435  Message size sent to node 19 : MPI_Send() 
+      1725          8          8          8          0  Message size sent to node 21
+      1725          8          8          8          0  Message size sent to node 21 : MPI_Send() 
+      1725       1408        176      826.6      478.5  Message size sent to node 22
+      1725       1408        176      826.6      478.5  Message size sent to node 22 : MPI_Send() 
+      1725          8          8          8          0  Message size sent to node 23
+      1725          8          8          8          0  Message size sent to node 23 : MPI_Send() 
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 3
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 3 : MPI_Send() 
+      1725       1408        176      826.6      478.5  Message size sent to node 5
+      1725       1408        176      826.6      478.5  Message size sent to node 5 : MPI_Send() 
+      1725  2.478E+05       3872   1.14E+05  1.055E+05  Message size sent to node 6
+      1725  2.478E+05       3872   1.14E+05  1.055E+05  Message size sent to node 6 : MPI_Send() 
+      1725       1408        176      826.6      478.5  Message size sent to node 7
+      1725       1408        176      826.6      478.5  Message size sent to node 7 : MPI_Send() 
+---------------------------------------------------------------------------------------
+
+NODE 3;CONTEXT 0;THREAD 0:
+---------------------------------------------------------------------------------------
+%Time    Exclusive    Inclusive       #Call      #Subrs  Inclusive Name
+              msec   total msec                          usec/call 
+---------------------------------------------------------------------------------------
+100.0     9:09.617     9:21.808           1       40225  561808903 .TAU application
+  1.0        5,666        5,666         546           0      10377 MPI_Allreduce() 
+  0.8        4,617        4,617       12075           0        382 MPI_Wait() 
+  0.3        1,758        1,758       12075           0        146 MPI_Send() 
+  0.0           70           70           1           0      70933 MPI_Finalize() 
+  0.0           48           48           1           0      48645 MPI_Init() 
+  0.0           19           19       12075           0          2 MPI_Irecv() 
+  0.0            7            7        1726           0          4 MPI_Comm_size() 
+  0.0            2            2        1726           0          1 MPI_Comm_rank() 
+---------------------------------------------------------------------------------------
+
+USER EVENTS Profile :NODE 3, CONTEXT 0, THREAD 0
+---------------------------------------------------------------------------------------
+NumSamples   MaxValue   MinValue  MeanValue  Std. Dev.  Event Name
+---------------------------------------------------------------------------------------
+       546          8          8          8          0  Message size for all-reduce
+ 1.208E+04  2.478E+05          8  4.625E+04  8.369E+04  Message size received from all nodes
+ 1.208E+04  2.478E+05          8  4.625E+04  8.369E+04  Message size received in wait
+ 1.208E+04  2.478E+05          8  4.625E+04  8.369E+04  Message size received in wait : MPI_Wait() 
+ 1.208E+04  2.478E+05          8  4.625E+04  8.369E+04  Message size sent to all nodes
+      1725       1280        160      751.5        435  Message size sent to node 18
+      1725       1280        160      751.5        435  Message size sent to node 18 : MPI_Send() 
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 19
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 19 : MPI_Send() 
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 2
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 2 : MPI_Send() 
+      1725          8          8          8          0  Message size sent to node 22
+      1725          8          8          8          0  Message size sent to node 22 : MPI_Send() 
+      1725       1408        176      826.6      478.5  Message size sent to node 23
+      1725       1408        176      826.6      478.5  Message size sent to node 23 : MPI_Send() 
+      1725       1408        176      826.6      478.5  Message size sent to node 6
+      1725       1408        176      826.6      478.5  Message size sent to node 6 : MPI_Send() 
+      1725  2.478E+05       3872   1.14E+05  1.055E+05  Message size sent to node 7
+      1725  2.478E+05       3872   1.14E+05  1.055E+05  Message size sent to node 7 : MPI_Send() 
+---------------------------------------------------------------------------------------
+
+NODE 4;CONTEXT 0;THREAD 0:
+---------------------------------------------------------------------------------------
+%Time    Exclusive    Inclusive       #Call      #Subrs  Inclusive Name
+              msec   total msec                          usec/call 
+---------------------------------------------------------------------------------------
+100.0     9:09.385     9:21.809           1       60925  561809038 .TAU application
+  1.0        5,669        5,669         546           0      10383 MPI_Allreduce() 
+  0.9        5,149        5,149       18975           0        271 MPI_Wait() 
+  0.3        1,418        1,418       18975           0         75 MPI_Send() 
+  0.0          101          101           1           0     101621 MPI_Finalize() 
+  0.0           48           48           1           0      48640 MPI_Init() 
+  0.0           27           27       18975           0          1 MPI_Irecv() 
+  0.0            6            6        1726           0          4 MPI_Comm_size() 
+  0.0            2            2        1726           0          1 MPI_Comm_rank() 
+---------------------------------------------------------------------------------------
+
+USER EVENTS Profile :NODE 4, CONTEXT 0, THREAD 0
+---------------------------------------------------------------------------------------
+NumSamples   MaxValue   MinValue  MeanValue  Std. Dev.  Event Name
+---------------------------------------------------------------------------------------
+       546          8          8          8          0  Message size for all-reduce
+ 1.898E+04  2.478E+05          8  3.995E+04   8.01E+04  Message size received from all nodes
+ 1.898E+04  2.478E+05          8  3.995E+04   8.01E+04  Message size received in wait
+ 1.898E+04  2.478E+05          8  3.995E+04   8.01E+04  Message size received in wait : MPI_Wait() 
+ 1.898E+04  2.478E+05          8  3.995E+04   8.01E+04  Message size sent to all nodes
+      1725  2.478E+05       3872   1.14E+05  1.055E+05  Message size sent to node 0
+      1725  2.478E+05       3872   1.14E+05  1.055E+05  Message size sent to node 0 : MPI_Send() 
+      1725       1408        176      826.6      478.5  Message size sent to node 1
+      1725       1408        176      826.6      478.5  Message size sent to node 1 : MPI_Send() 
+      1725       1408        176      826.6      478.5  Message size sent to node 16
+      1725       1408        176      826.6      478.5  Message size sent to node 16 : MPI_Send() 
+      1725          8          8          8          0  Message size sent to node 17
+      1725          8          8          8          0  Message size sent to node 17 : MPI_Send() 
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 20
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 20 : MPI_Send() 
+      1725       1280        160      751.5        435  Message size sent to node 21
+      1725       1280        160      751.5        435  Message size sent to node 21 : MPI_Send() 
+      1725       1408        176      826.6      478.5  Message size sent to node 24
+      1725       1408        176      826.6      478.5  Message size sent to node 24 : MPI_Send() 
+      1725          8          8          8          0  Message size sent to node 25
+      1725          8          8          8          0  Message size sent to node 25 : MPI_Send() 
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 5
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 5 : MPI_Send() 
+      1725  2.478E+05       3872   1.14E+05  1.055E+05  Message size sent to node 8
+      1725  2.478E+05       3872   1.14E+05  1.055E+05  Message size sent to node 8 : MPI_Send() 
+      1725       1408        176      826.6      478.5  Message size sent to node 9
+      1725       1408        176      826.6      478.5  Message size sent to node 9 : MPI_Send() 
+---------------------------------------------------------------------------------------
+
+NODE 5;CONTEXT 0;THREAD 0:
+---------------------------------------------------------------------------------------
+%Time    Exclusive    Inclusive       #Call      #Subrs  Inclusive Name
+              msec   total msec                          usec/call 
+---------------------------------------------------------------------------------------
+100.0     9:10.250     9:21.808           1       91975  561808565 .TAU application
+  0.9        5,142        5,142         546           0       9418 MPI_Allreduce() 
+  0.8        4,650        4,650       29325           0        159 MPI_Wait() 
+  0.3        1,563        1,563       29325           0         53 MPI_Send() 
+  0.0          104          104           1           0     104532 MPI_Finalize() 
+  0.0           48           48           1           0      48785 MPI_Init() 
+  0.0           39           39       29325           0          1 MPI_Irecv() 
+  0.0            6            6        1726           0          4 MPI_Comm_size() 
+  0.0            2            2        1726           0          1 MPI_Comm_rank() 
+---------------------------------------------------------------------------------------
+
+USER EVENTS Profile :NODE 5, CONTEXT 0, THREAD 0
+---------------------------------------------------------------------------------------
+NumSamples   MaxValue   MinValue  MeanValue  Std. Dev.  Event Name
+---------------------------------------------------------------------------------------
+       546          8          8          8          0  Message size for all-reduce
+ 2.932E+04  2.478E+05          8  3.209E+04  7.299E+04  Message size received from all nodes
+ 2.932E+04  2.478E+05          8  3.209E+04  7.299E+04  Message size received in wait
+ 2.932E+04  2.478E+05          8  3.209E+04  7.299E+04  Message size received in wait : MPI_Wait() 
+ 2.932E+04  2.478E+05          8  3.209E+04  7.299E+04  Message size sent to all nodes
+      1725       1408        176      826.6      478.5  Message size sent to node 0
+      1725       1408        176      826.6      478.5  Message size sent to node 0 : MPI_Send() 
+      1725  2.478E+05       3872   1.14E+05  1.055E+05  Message size sent to node 1
+      1725  2.478E+05       3872   1.14E+05  1.055E+05  Message size sent to node 1 : MPI_Send() 
+      1725       1408        176      826.6      478.5  Message size sent to node 10
+      1725       1408        176      826.6      478.5  Message size sent to node 10 : MPI_Send() 
+      1725          8          8          8          0  Message size sent to node 16
+      1725          8          8          8          0  Message size sent to node 16 : MPI_Send() 
+      1725       1408        176      826.6      478.5  Message size sent to node 17
+      1725       1408        176      826.6      478.5  Message size sent to node 17 : MPI_Send() 
+      1725          8          8          8          0  Message size sent to node 18
+      1725          8          8          8          0  Message size sent to node 18 : MPI_Send() 
+      1725       1408        176      826.6      478.5  Message size sent to node 2
+      1725       1408        176      826.6      478.5  Message size sent to node 2 : MPI_Send() 
+      1725       1280        160      751.5        435  Message size sent to node 20
+      1725       1280        160      751.5        435  Message size sent to node 20 : MPI_Send() 
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 21
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 21 : MPI_Send() 
+      1725       1280        160      751.5        435  Message size sent to node 22
+      1725       1280        160      751.5        435  Message size sent to node 22 : MPI_Send() 
+      1725          8          8          8          0  Message size sent to node 24
+      1725          8          8          8          0  Message size sent to node 24 : MPI_Send() 
+      1725       1408        176      826.6      478.5  Message size sent to node 25
+      1725       1408        176      826.6      478.5  Message size sent to node 25 : MPI_Send() 
+      1725          8          8          8          0  Message size sent to node 26
+      1725          8          8          8          0  Message size sent to node 26 : MPI_Send() 
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 4
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 4 : MPI_Send() 
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 6
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 6 : MPI_Send() 
+      1725       1408        176      826.6      478.5  Message size sent to node 8
+      1725       1408        176      826.6      478.5  Message size sent to node 8 : MPI_Send() 
+      1725  2.478E+05       3872   1.14E+05  1.055E+05  Message size sent to node 9
+      1725  2.478E+05       3872   1.14E+05  1.055E+05  Message size sent to node 9 : MPI_Send() 
+---------------------------------------------------------------------------------------
+
+NODE 6;CONTEXT 0;THREAD 0:
+---------------------------------------------------------------------------------------
+%Time    Exclusive    Inclusive       #Call      #Subrs  Inclusive Name
+              msec   total msec                          usec/call 
+---------------------------------------------------------------------------------------
+100.0     9:10.839     9:21.808           1       91975  561808725 .TAU application
+  0.9        4,974        4,974       29325           0        170 MPI_Wait() 
+  0.7        4,212        4,212         546           0       7716 MPI_Allreduce() 
+  0.3        1,577        1,577       29325           0         54 MPI_Send() 
+  0.0          110          110           1           0     110015 MPI_Finalize() 
+  0.0           48           48           1           0      48607 MPI_Init() 
+  0.0           38           38       29325           0          1 MPI_Irecv() 
+  0.0            6            6        1726           0          4 MPI_Comm_size() 
+  0.0            2            2        1726           0          1 MPI_Comm_rank() 
+---------------------------------------------------------------------------------------
+
+USER EVENTS Profile :NODE 6, CONTEXT 0, THREAD 0
+---------------------------------------------------------------------------------------
+NumSamples   MaxValue   MinValue  MeanValue  Std. Dev.  Event Name
+---------------------------------------------------------------------------------------
+       546          8          8          8          0  Message size for all-reduce
+ 2.932E+04  2.478E+05          8  3.209E+04  7.299E+04  Message size received from all nodes
+ 2.932E+04  2.478E+05          8  3.209E+04  7.299E+04  Message size received in wait
+ 2.932E+04  2.478E+05          8  3.209E+04  7.299E+04  Message size received in wait : MPI_Wait() 
+ 2.932E+04  2.478E+05          8  3.209E+04  7.299E+04  Message size sent to all nodes
+      1725       1408        176      826.6      478.5  Message size sent to node 1
+      1725       1408        176      826.6      478.5  Message size sent to node 1 : MPI_Send() 
+      1725  2.478E+05       3872   1.14E+05  1.055E+05  Message size sent to node 10
+      1725  2.478E+05       3872   1.14E+05  1.055E+05  Message size sent to node 10 : MPI_Send() 
+      1725       1408        176      826.6      478.5  Message size sent to node 11
+      1725       1408        176      826.6      478.5  Message size sent to node 11 : MPI_Send() 
+      1725          8          8          8          0  Message size sent to node 17
+      1725          8          8          8          0  Message size sent to node 17 : MPI_Send() 
+      1725       1408        176      826.6      478.5  Message size sent to node 18
+      1725       1408        176      826.6      478.5  Message size sent to node 18 : MPI_Send() 
+      1725          8          8          8          0  Message size sent to node 19
+      1725          8          8          8          0  Message size sent to node 19 : MPI_Send() 
+      1725  2.478E+05       3872   1.14E+05  1.055E+05  Message size sent to node 2
+      1725  2.478E+05       3872   1.14E+05  1.055E+05  Message size sent to node 2 : MPI_Send() 
+      1725       1280        160      751.5        435  Message size sent to node 21
+      1725       1280        160      751.5        435  Message size sent to node 21 : MPI_Send() 
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 22
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 22 : MPI_Send() 
+      1725       1280        160      751.5        435  Message size sent to node 23
+      1725       1280        160      751.5        435  Message size sent to node 23 : MPI_Send() 
+      1725          8          8          8          0  Message size sent to node 25
+      1725          8          8          8          0  Message size sent to node 25 : MPI_Send() 
+      1725       1408        176      826.6      478.5  Message size sent to node 26
+      1725       1408        176      826.6      478.5  Message size sent to node 26 : MPI_Send() 
+      1725          8          8          8          0  Message size sent to node 27
+      1725          8          8          8          0  Message size sent to node 27 : MPI_Send() 
+      1725       1408        176      826.6      478.5  Message size sent to node 3
+      1725       1408        176      826.6      478.5  Message size sent to node 3 : MPI_Send() 
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 5
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 5 : MPI_Send() 
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 7
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 7 : MPI_Send() 
+      1725       1408        176      826.6      478.5  Message size sent to node 9
+      1725       1408        176      826.6      478.5  Message size sent to node 9 : MPI_Send() 
+---------------------------------------------------------------------------------------
+
+NODE 7;CONTEXT 0;THREAD 0:
+---------------------------------------------------------------------------------------
+%Time    Exclusive    Inclusive       #Call      #Subrs  Inclusive Name
+              msec   total msec                          usec/call 
+---------------------------------------------------------------------------------------
+100.0     9:09.955     9:21.808           1       60925  561808900 .TAU application
+  1.0        5,368        5,368         546           0       9832 MPI_Allreduce() 
+  0.8        4,450        4,450       18975           0        235 MPI_Wait() 
+  0.3        1,856        1,856       18975           0         98 MPI_Send() 
+  0.0           96           96           1           0      96635 MPI_Finalize() 
+  0.0           48           48           1           0      48674 MPI_Init() 
+  0.0           25           25       18975           0          1 MPI_Irecv() 
+  0.0            5            5        1726           0          3 MPI_Comm_size() 
+  0.0            2            2        1726           0          1 MPI_Comm_rank() 
+---------------------------------------------------------------------------------------
+
+USER EVENTS Profile :NODE 7, CONTEXT 0, THREAD 0
+---------------------------------------------------------------------------------------
+NumSamples   MaxValue   MinValue  MeanValue  Std. Dev.  Event Name
+---------------------------------------------------------------------------------------
+       546          8          8          8          0  Message size for all-reduce
+ 1.898E+04  2.478E+05          8  3.995E+04   8.01E+04  Message size received from all nodes
+ 1.898E+04  2.478E+05          8  3.995E+04   8.01E+04  Message size received in wait
+ 1.898E+04  2.478E+05          8  3.995E+04   8.01E+04  Message size received in wait : MPI_Wait() 
+ 1.898E+04  2.478E+05          8  3.995E+04   8.01E+04  Message size sent to all nodes
+      1725       1408        176      826.6      478.5  Message size sent to node 10
+      1725       1408        176      826.6      478.5  Message size sent to node 10 : MPI_Send() 
+      1725  2.478E+05       3872   1.14E+05  1.055E+05  Message size sent to node 11
+      1725  2.478E+05       3872   1.14E+05  1.055E+05  Message size sent to node 11 : MPI_Send() 
+      1725          8          8          8          0  Message size sent to node 18
+      1725          8          8          8          0  Message size sent to node 18 : MPI_Send() 
+      1725       1408        176      826.6      478.5  Message size sent to node 19
+      1725       1408        176      826.6      478.5  Message size sent to node 19 : MPI_Send() 
+      1725       1408        176      826.6      478.5  Message size sent to node 2
+      1725       1408        176      826.6      478.5  Message size sent to node 2 : MPI_Send() 
+      1725       1280        160      751.5        435  Message size sent to node 22
+      1725       1280        160      751.5        435  Message size sent to node 22 : MPI_Send() 
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 23
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 23 : MPI_Send() 
+      1725          8          8          8          0  Message size sent to node 26
+      1725          8          8          8          0  Message size sent to node 26 : MPI_Send() 
+      1725       1408        176      826.6      478.5  Message size sent to node 27
+      1725       1408        176      826.6      478.5  Message size sent to node 27 : MPI_Send() 
+      1725  2.478E+05       3872   1.14E+05  1.055E+05  Message size sent to node 3
+      1725  2.478E+05       3872   1.14E+05  1.055E+05  Message size sent to node 3 : MPI_Send() 
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 6
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 6 : MPI_Send() 
+---------------------------------------------------------------------------------------
+
+NODE 8;CONTEXT 0;THREAD 0:
+---------------------------------------------------------------------------------------
+%Time    Exclusive    Inclusive       #Call      #Subrs  Inclusive Name
+              msec   total msec                          usec/call 
+---------------------------------------------------------------------------------------
+100.0     9:09.948     9:21.808           1       60925  561808825 .TAU application
+  0.9        5,271        5,271         546           0       9654 MPI_Allreduce() 
+  0.9        5,077        5,077       18975           0        268 MPI_Wait() 
+  0.2        1,288        1,288       18975           0         68 MPI_Send() 
+  0.0          136          136           1           0     136836 MPI_Finalize() 
+  0.0           48           48           1           0      48609 MPI_Init() 
+  0.0           28           28       18975           0          2 MPI_Irecv() 
+  0.0            6            6        1726           0          4 MPI_Comm_size() 
+  0.0            2            2        1726           0          1 MPI_Comm_rank() 
+---------------------------------------------------------------------------------------
+
+USER EVENTS Profile :NODE 8, CONTEXT 0, THREAD 0
+---------------------------------------------------------------------------------------
+NumSamples   MaxValue   MinValue  MeanValue  Std. Dev.  Event Name
+---------------------------------------------------------------------------------------
+       546          8          8          8          0  Message size for all-reduce
+ 1.898E+04  2.478E+05          8  3.995E+04   8.01E+04  Message size received from all nodes
+ 1.898E+04  2.478E+05          8  3.995E+04   8.01E+04  Message size received in wait
+ 1.898E+04  2.478E+05          8  3.995E+04   8.01E+04  Message size received in wait : MPI_Wait() 
+ 1.898E+04  2.478E+05          8  3.995E+04   8.01E+04  Message size sent to all nodes
+      1725  2.478E+05       3872   1.14E+05  1.055E+05  Message size sent to node 12
+      1725  2.478E+05       3872   1.14E+05  1.055E+05  Message size sent to node 12 : MPI_Send() 
+      1725       1408        176      826.6      478.5  Message size sent to node 13
+      1725       1408        176      826.6      478.5  Message size sent to node 13 : MPI_Send() 
+      1725       1408        176      826.6      478.5  Message size sent to node 20
+      1725       1408        176      826.6      478.5  Message size sent to node 20 : MPI_Send() 
+      1725          8          8          8          0  Message size sent to node 21
+      1725          8          8          8          0  Message size sent to node 21 : MPI_Send() 
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 24
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 24 : MPI_Send() 
+      1725       1280        160      751.5        435  Message size sent to node 25
+      1725       1280        160      751.5        435  Message size sent to node 25 : MPI_Send() 
+      1725       1408        176      826.6      478.5  Message size sent to node 28
+      1725       1408        176      826.6      478.5  Message size sent to node 28 : MPI_Send() 
+      1725          8          8          8          0  Message size sent to node 29
+      1725          8          8          8          0  Message size sent to node 29 : MPI_Send() 
+      1725  2.478E+05       3872   1.14E+05  1.055E+05  Message size sent to node 4
+      1725  2.478E+05       3872   1.14E+05  1.055E+05  Message size sent to node 4 : MPI_Send() 
+      1725       1408        176      826.6      478.5  Message size sent to node 5
+      1725       1408        176      826.6      478.5  Message size sent to node 5 : MPI_Send() 
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 9
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 9 : MPI_Send() 
+---------------------------------------------------------------------------------------
+
+NODE 9;CONTEXT 0;THREAD 0:
+---------------------------------------------------------------------------------------
+%Time    Exclusive    Inclusive       #Call      #Subrs  Inclusive Name
+              msec   total msec                          usec/call 
+---------------------------------------------------------------------------------------
+100.0     9:10.394     9:21.808           1       91975  561808695 .TAU application
+  0.9        5,016        5,016         546           0       9188 MPI_Allreduce() 
+  0.9        4,881        4,881       29325           0        166 MPI_Wait() 
+  0.2        1,261        1,261       29325           0         43 MPI_Send() 
+  0.0          158          158           1           0     158667 MPI_Finalize() 
+  0.0           48           48           1           0      48651 MPI_Init() 
+  0.0           39           39       29325           0          1 MPI_Irecv() 
+  0.0            5            5        1726           0          3 MPI_Comm_size() 
+  0.0            2            2        1726           0          1 MPI_Comm_rank() 
+---------------------------------------------------------------------------------------
+
+USER EVENTS Profile :NODE 9, CONTEXT 0, THREAD 0
+---------------------------------------------------------------------------------------
+NumSamples   MaxValue   MinValue  MeanValue  Std. Dev.  Event Name
+---------------------------------------------------------------------------------------
+       546          8          8          8          0  Message size for all-reduce
+ 2.932E+04  2.478E+05          8  3.209E+04  7.299E+04  Message size received from all nodes
+ 2.932E+04  2.478E+05          8  3.209E+04  7.299E+04  Message size received in wait
+ 2.932E+04  2.478E+05          8  3.209E+04  7.299E+04  Message size received in wait : MPI_Wait() 
+ 2.932E+04  2.478E+05          8  3.209E+04  7.299E+04  Message size sent to all nodes
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 10
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 10 : MPI_Send() 
+      1725       1408        176      826.6      478.5  Message size sent to node 12
+      1725       1408        176      826.6      478.5  Message size sent to node 12 : MPI_Send() 
+      1725  2.478E+05       3872   1.14E+05  1.055E+05  Message size sent to node 13
+      1725  2.478E+05       3872   1.14E+05  1.055E+05  Message size sent to node 13 : MPI_Send() 
+      1725       1408        176      826.6      478.5  Message size sent to node 14
+      1725       1408        176      826.6      478.5  Message size sent to node 14 : MPI_Send() 
+      1725          8          8          8          0  Message size sent to node 20
+      1725          8          8          8          0  Message size sent to node 20 : MPI_Send() 
+      1725       1408        176      826.6      478.5  Message size sent to node 21
+      1725       1408        176      826.6      478.5  Message size sent to node 21 : MPI_Send() 
+      1725          8          8          8          0  Message size sent to node 22
+      1725          8          8          8          0  Message size sent to node 22 : MPI_Send() 
+      1725       1280        160      751.5        435  Message size sent to node 24
+      1725       1280        160      751.5        435  Message size sent to node 24 : MPI_Send() 
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 25
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 25 : MPI_Send() 
+      1725       1280        160      751.5        435  Message size sent to node 26
+      1725       1280        160      751.5        435  Message size sent to node 26 : MPI_Send() 
+      1725          8          8          8          0  Message size sent to node 28
+      1725          8          8          8          0  Message size sent to node 28 : MPI_Send() 
+      1725       1408        176      826.6      478.5  Message size sent to node 29
+      1725       1408        176      826.6      478.5  Message size sent to node 29 : MPI_Send() 
+      1725          8          8          8          0  Message size sent to node 30
+      1725          8          8          8          0  Message size sent to node 30 : MPI_Send() 
+      1725       1408        176      826.6      478.5  Message size sent to node 4
+      1725       1408        176      826.6      478.5  Message size sent to node 4 : MPI_Send() 
+      1725  2.478E+05       3872   1.14E+05  1.055E+05  Message size sent to node 5
+      1725  2.478E+05       3872   1.14E+05  1.055E+05  Message size sent to node 5 : MPI_Send() 
+      1725       1408        176      826.6      478.5  Message size sent to node 6
+      1725       1408        176      826.6      478.5  Message size sent to node 6 : MPI_Send() 
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 8
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 8 : MPI_Send() 
+---------------------------------------------------------------------------------------
+
+NODE 10;CONTEXT 0;THREAD 0:
+---------------------------------------------------------------------------------------
+%Time    Exclusive    Inclusive       #Call      #Subrs  Inclusive Name
+              msec   total msec                          usec/call 
+---------------------------------------------------------------------------------------
+100.0     9:08.010     9:21.808           1       91975  561808724 .TAU application
+  1.1        6,156        6,156         546           0      11276 MPI_Allreduce() 
+  1.0        5,403        5,403       29325           0        184 MPI_Wait() 
+  0.4        2,022        2,022       29325           0         69 MPI_Send() 
+  0.0          114          114           1           0     114524 MPI_Finalize() 
+  0.0           48           48           1           0      48751 MPI_Init() 
+  0.0           42           42       29325           0          1 MPI_Irecv() 
+  0.0            6            6        1726           0          4 MPI_Comm_size() 
+  0.0            2            2        1726           0          2 MPI_Comm_rank() 
+---------------------------------------------------------------------------------------
+
+USER EVENTS Profile :NODE 10, CONTEXT 0, THREAD 0
+---------------------------------------------------------------------------------------
+NumSamples   MaxValue   MinValue  MeanValue  Std. Dev.  Event Name
+---------------------------------------------------------------------------------------
+       546          8          8          8          0  Message size for all-reduce
+ 2.932E+04  2.478E+05          8  3.209E+04  7.299E+04  Message size received from all nodes
+ 2.932E+04  2.478E+05          8  3.209E+04  7.299E+04  Message size received in wait
+ 2.932E+04  2.478E+05          8  3.209E+04  7.299E+04  Message size received in wait : MPI_Wait() 
+ 2.932E+04  2.478E+05          8  3.209E+04  7.299E+04  Message size sent to all nodes
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 11
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 11 : MPI_Send() 
+      1725       1408        176      826.6      478.5  Message size sent to node 13
+      1725       1408        176      826.6      478.5  Message size sent to node 13 : MPI_Send() 
+      1725  2.478E+05       3872   1.14E+05  1.055E+05  Message size sent to node 14
+      1725  2.478E+05       3872   1.14E+05  1.055E+05  Message size sent to node 14 : MPI_Send() 
+      1725       1408        176      826.6      478.5  Message size sent to node 15
+      1725       1408        176      826.6      478.5  Message size sent to node 15 : MPI_Send() 
+      1725          8          8          8          0  Message size sent to node 21
+      1725          8          8          8          0  Message size sent to node 21 : MPI_Send() 
+      1725       1408        176      826.6      478.5  Message size sent to node 22
+      1725       1408        176      826.6      478.5  Message size sent to node 22 : MPI_Send() 
+      1725          8          8          8          0  Message size sent to node 23
+      1725          8          8          8          0  Message size sent to node 23 : MPI_Send() 
+      1725       1280        160      751.5        435  Message size sent to node 25
+      1725       1280        160      751.5        435  Message size sent to node 25 : MPI_Send() 
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 26
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 26 : MPI_Send() 
+      1725       1280        160      751.5        435  Message size sent to node 27
+      1725       1280        160      751.5        435  Message size sent to node 27 : MPI_Send() 
+      1725          8          8          8          0  Message size sent to node 29
+      1725          8          8          8          0  Message size sent to node 29 : MPI_Send() 
+      1725       1408        176      826.6      478.5  Message size sent to node 30
+      1725       1408        176      826.6      478.5  Message size sent to node 30 : MPI_Send() 
+      1725          8          8          8          0  Message size sent to node 31
+      1725          8          8          8          0  Message size sent to node 31 : MPI_Send() 
+      1725       1408        176      826.6      478.5  Message size sent to node 5
+      1725       1408        176      826.6      478.5  Message size sent to node 5 : MPI_Send() 
+      1725  2.478E+05       3872   1.14E+05  1.055E+05  Message size sent to node 6
+      1725  2.478E+05       3872   1.14E+05  1.055E+05  Message size sent to node 6 : MPI_Send() 
+      1725       1408        176      826.6      478.5  Message size sent to node 7
+      1725       1408        176      826.6      478.5  Message size sent to node 7 : MPI_Send() 
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 9
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 9 : MPI_Send() 
+---------------------------------------------------------------------------------------
+
+NODE 11;CONTEXT 0;THREAD 0:
+---------------------------------------------------------------------------------------
+%Time    Exclusive    Inclusive       #Call      #Subrs  Inclusive Name
+              msec   total msec                          usec/call 
+---------------------------------------------------------------------------------------
+100.0     9:08.465     9:21.808           1       60925  561808812 .TAU application
+  1.1        5,982        5,982         546           0      10957 MPI_Allreduce() 
+  0.9        5,226        5,226       18975           0        275 MPI_Wait() 
+  0.3        1,908        1,908       18975           0        101 MPI_Send() 
+  0.0          141          141           1           0     141616 MPI_Finalize() 
+  0.0           48           48           1           0      48761 MPI_Init() 
+  0.0           27           27       18975           0          1 MPI_Irecv() 
+  0.0            6            6        1726           0          4 MPI_Comm_size() 
+  0.0            2            2        1726           0          1 MPI_Comm_rank() 
+---------------------------------------------------------------------------------------
+
+USER EVENTS Profile :NODE 11, CONTEXT 0, THREAD 0
+---------------------------------------------------------------------------------------
+NumSamples   MaxValue   MinValue  MeanValue  Std. Dev.  Event Name
+---------------------------------------------------------------------------------------
+       546          8          8          8          0  Message size for all-reduce
+ 1.898E+04  2.478E+05          8  3.995E+04   8.01E+04  Message size received from all nodes
+ 1.898E+04  2.478E+05          8  3.995E+04   8.01E+04  Message size received in wait
+ 1.898E+04  2.478E+05          8  3.995E+04   8.01E+04  Message size received in wait : MPI_Wait() 
+ 1.898E+04  2.478E+05          8  3.995E+04   8.01E+04  Message size sent to all nodes
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 10
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 10 : MPI_Send() 
+      1725       1408        176      826.6      478.5  Message size sent to node 14
+      1725       1408        176      826.6      478.5  Message size sent to node 14 : MPI_Send() 
+      1725  2.478E+05       3872   1.14E+05  1.055E+05  Message size sent to node 15
+      1725  2.478E+05       3872   1.14E+05  1.055E+05  Message size sent to node 15 : MPI_Send() 
+      1725          8          8          8          0  Message size sent to node 22
+      1725          8          8          8          0  Message size sent to node 22 : MPI_Send() 
+      1725       1408        176      826.6      478.5  Message size sent to node 23
+      1725       1408        176      826.6      478.5  Message size sent to node 23 : MPI_Send() 
+      1725       1280        160      751.5        435  Message size sent to node 26
+      1725       1280        160      751.5        435  Message size sent to node 26 : MPI_Send() 
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 27
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 27 : MPI_Send() 
+      1725          8          8          8          0  Message size sent to node 30
+      1725          8          8          8          0  Message size sent to node 30 : MPI_Send() 
+      1725       1408        176      826.6      478.5  Message size sent to node 31
+      1725       1408        176      826.6      478.5  Message size sent to node 31 : MPI_Send() 
+      1725       1408        176      826.6      478.5  Message size sent to node 6
+      1725       1408        176      826.6      478.5  Message size sent to node 6 : MPI_Send() 
+      1725  2.478E+05       3872   1.14E+05  1.055E+05  Message size sent to node 7
+      1725  2.478E+05       3872   1.14E+05  1.055E+05  Message size sent to node 7 : MPI_Send() 
+---------------------------------------------------------------------------------------
+
+NODE 12;CONTEXT 0;THREAD 0:
+---------------------------------------------------------------------------------------
+%Time    Exclusive    Inclusive       #Call      #Subrs  Inclusive Name
+              msec   total msec                          usec/call 
+---------------------------------------------------------------------------------------
+100.0     9:08.578     9:21.808           1       40225  561808833 .TAU application
+  1.1        5,953        5,953         546           0      10903 MPI_Allreduce() 
+  1.0        5,383        5,383       12075           0        446 MPI_Wait() 
+  0.3        1,673        1,673       12075           0        139 MPI_Send() 
+  0.0          140          140           1           0     140698 MPI_Finalize() 
+  0.0           48           48           1           0      48621 MPI_Init() 
+  0.0           20           20       12075           0          2 MPI_Irecv() 
+  0.0            7            7        1726           0          4 MPI_Comm_size() 
+  0.0            2            2        1726           0          2 MPI_Comm_rank() 
+---------------------------------------------------------------------------------------
+
+USER EVENTS Profile :NODE 12, CONTEXT 0, THREAD 0
+---------------------------------------------------------------------------------------
+NumSamples   MaxValue   MinValue  MeanValue  Std. Dev.  Event Name
+---------------------------------------------------------------------------------------
+       546          8          8          8          0  Message size for all-reduce
+ 1.208E+04  2.478E+05          8  4.625E+04  8.369E+04  Message size received from all nodes
+ 1.208E+04  2.478E+05          8  4.625E+04  8.369E+04  Message size received in wait
+ 1.208E+04  2.478E+05          8  4.625E+04  8.369E+04  Message size received in wait : MPI_Wait() 
+ 1.208E+04  2.478E+05          8  4.625E+04  8.369E+04  Message size sent to all nodes
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 13
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 13 : MPI_Send() 
+      1725       1408        176      826.6      478.5  Message size sent to node 24
+      1725       1408        176      826.6      478.5  Message size sent to node 24 : MPI_Send() 
+      1725          8          8          8          0  Message size sent to node 25
+      1725          8          8          8          0  Message size sent to node 25 : MPI_Send() 
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 28
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 28 : MPI_Send() 
+      1725       1280        160      751.5        435  Message size sent to node 29
+      1725       1280        160      751.5        435  Message size sent to node 29 : MPI_Send() 
+      1725  2.478E+05       3872   1.14E+05  1.055E+05  Message size sent to node 8
+      1725  2.478E+05       3872   1.14E+05  1.055E+05  Message size sent to node 8 : MPI_Send() 
+      1725       1408        176      826.6      478.5  Message size sent to node 9
+      1725       1408        176      826.6      478.5  Message size sent to node 9 : MPI_Send() 
+---------------------------------------------------------------------------------------
+
+NODE 13;CONTEXT 0;THREAD 0:
+---------------------------------------------------------------------------------------
+%Time    Exclusive    Inclusive       #Call      #Subrs  Inclusive Name
+              msec   total msec                          usec/call 
+---------------------------------------------------------------------------------------
+100.0     9:08.829     9:21.807           1       60925  561807687 .TAU application
+  1.1        6,121        6,121         546           0      11212 MPI_Allreduce() 
+  0.9        4,884        4,884       18975           0        257 MPI_Wait() 
+  0.3        1,796        1,796       18975           0         95 MPI_Send() 
+  0.0           89           89           1           0      89845 MPI_Finalize() 
+  0.0           48           48           1           0      48625 MPI_Init() 
+  0.0           28           28       18975           0          1 MPI_Irecv() 
+  0.0            6            6        1726           0          4 MPI_Comm_size() 
+  0.0            2            2        1726           0          1 MPI_Comm_rank() 
+---------------------------------------------------------------------------------------
+
+USER EVENTS Profile :NODE 13, CONTEXT 0, THREAD 0
+---------------------------------------------------------------------------------------
+NumSamples   MaxValue   MinValue  MeanValue  Std. Dev.  Event Name
+---------------------------------------------------------------------------------------
+       546          8          8          8          0  Message size for all-reduce
+ 1.898E+04  2.478E+05          8    3.9E+04  7.817E+04  Message size received from all nodes
+ 1.898E+04  2.478E+05          8    3.9E+04  7.817E+04  Message size received in wait
+ 1.898E+04  2.478E+05          8    3.9E+04  7.817E+04  Message size received in wait : MPI_Wait() 
+ 1.898E+04  2.478E+05          8    3.9E+04  7.817E+04  Message size sent to all nodes
+      1725       1408        176      826.6      478.5  Message size sent to node 10
+      1725       1408        176      826.6      478.5  Message size sent to node 10 : MPI_Send() 
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 12
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 12 : MPI_Send() 
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 14
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 14 : MPI_Send() 
+      1725          8          8          8          0  Message size sent to node 24
+      1725          8          8          8          0  Message size sent to node 24 : MPI_Send() 
+      1725       1408        176      826.6      478.5  Message size sent to node 25
+      1725       1408        176      826.6      478.5  Message size sent to node 25 : MPI_Send() 
+      1725          8          8          8          0  Message size sent to node 26
+      1725          8          8          8          0  Message size sent to node 26 : MPI_Send() 
+      1725       1280        160      751.5        435  Message size sent to node 28
+      1725       1280        160      751.5        435  Message size sent to node 28 : MPI_Send() 
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 29
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 29 : MPI_Send() 
+      1725       1280        160      751.5        435  Message size sent to node 30
+      1725       1280        160      751.5        435  Message size sent to node 30 : MPI_Send() 
+      1725       1408        176      826.6      478.5  Message size sent to node 8
+      1725       1408        176      826.6      478.5  Message size sent to node 8 : MPI_Send() 
+      1725  2.478E+05       3872   1.14E+05  1.055E+05  Message size sent to node 9
+      1725  2.478E+05       3872   1.14E+05  1.055E+05  Message size sent to node 9 : MPI_Send() 
+---------------------------------------------------------------------------------------
+
+NODE 14;CONTEXT 0;THREAD 0:
+---------------------------------------------------------------------------------------
+%Time    Exclusive    Inclusive       #Call      #Subrs  Inclusive Name
+              msec   total msec                          usec/call 
+---------------------------------------------------------------------------------------
+100.0     9:07.916     9:21.808           1       60925  561808135 .TAU application
+  1.1        6,257        6,257         546           0      11461 MPI_Allreduce() 
+  1.0        5,709        5,709       18975           0        301 MPI_Wait() 
+  0.3        1,697        1,697       18975           0         89 MPI_Send() 
+  0.0          138          138           1           0     138691 MPI_Finalize() 
+  0.0           48           48           1           0      48744 MPI_Init() 
+  0.0           30           30       18975           0          2 MPI_Irecv() 
+  0.0            7            7        1726           0          4 MPI_Comm_size() 
+  0.0            2            2        1726           0          2 MPI_Comm_rank() 
+---------------------------------------------------------------------------------------
+
+USER EVENTS Profile :NODE 14, CONTEXT 0, THREAD 0
+---------------------------------------------------------------------------------------
+NumSamples   MaxValue   MinValue  MeanValue  Std. Dev.  Event Name
+---------------------------------------------------------------------------------------
+       546          8          8          8          0  Message size for all-reduce
+ 1.898E+04  2.478E+05          8    3.9E+04  7.817E+04  Message size received from all nodes
+ 1.898E+04  2.478E+05          8    3.9E+04  7.817E+04  Message size received in wait
+ 1.898E+04  2.478E+05          8    3.9E+04  7.817E+04  Message size received in wait : MPI_Wait() 
+ 1.898E+04  2.478E+05          8    3.9E+04  7.817E+04  Message size sent to all nodes
+      1725  2.478E+05       3872   1.14E+05  1.055E+05  Message size sent to node 10
+      1725  2.478E+05       3872   1.14E+05  1.055E+05  Message size sent to node 10 : MPI_Send() 
+      1725       1408        176      826.6      478.5  Message size sent to node 11
+      1725       1408        176      826.6      478.5  Message size sent to node 11 : MPI_Send() 
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 13
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 13 : MPI_Send() 
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 15
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 15 : MPI_Send() 
+      1725          8          8          8          0  Message size sent to node 25
+      1725          8          8          8          0  Message size sent to node 25 : MPI_Send() 
+      1725       1408        176      826.6      478.5  Message size sent to node 26
+      1725       1408        176      826.6      478.5  Message size sent to node 26 : MPI_Send() 
+      1725          8          8          8          0  Message size sent to node 27
+      1725          8          8          8          0  Message size sent to node 27 : MPI_Send() 
+      1725       1280        160      751.5        435  Message size sent to node 29
+      1725       1280        160      751.5        435  Message size sent to node 29 : MPI_Send() 
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 30
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 30 : MPI_Send() 
+      1725       1280        160      751.5        435  Message size sent to node 31
+      1725       1280        160      751.5        435  Message size sent to node 31 : MPI_Send() 
+      1725       1408        176      826.6      478.5  Message size sent to node 9
+      1725       1408        176      826.6      478.5  Message size sent to node 9 : MPI_Send() 
+---------------------------------------------------------------------------------------
+
+NODE 15;CONTEXT 0;THREAD 0:
+---------------------------------------------------------------------------------------
+%Time    Exclusive    Inclusive       #Call      #Subrs  Inclusive Name
+              msec   total msec                          usec/call 
+---------------------------------------------------------------------------------------
+100.0     9:05.234     9:21.808           1       40225  561808819 .TAU application
+  1.3        7,396        7,396         546           0      13546 MPI_Allreduce() 
+  1.2        6,730        6,730       12075           0        557 MPI_Wait() 
+  0.4        2,272        2,272       12075           0        188 MPI_Send() 
+  0.0           94           94           1           0      94820 MPI_Finalize() 
+  0.0           48           48           1           0      48660 MPI_Init() 
+  0.0           21           21       12075           0          2 MPI_Irecv() 
+  0.0            7            7        1726           0          5 MPI_Comm_size() 
+  0.0            2            2        1726           0          2 MPI_Comm_rank() 
+---------------------------------------------------------------------------------------
+
+USER EVENTS Profile :NODE 15, CONTEXT 0, THREAD 0
+---------------------------------------------------------------------------------------
+NumSamples   MaxValue   MinValue  MeanValue  Std. Dev.  Event Name
+---------------------------------------------------------------------------------------
+       546          8          8          8          0  Message size for all-reduce
+ 1.208E+04  2.478E+05          8  4.625E+04  8.369E+04  Message size received from all nodes
+ 1.208E+04  2.478E+05          8  4.625E+04  8.369E+04  Message size received in wait
+ 1.208E+04  2.478E+05          8  4.625E+04  8.369E+04  Message size received in wait : MPI_Wait() 
+ 1.208E+04  2.478E+05          8  4.625E+04  8.369E+04  Message size sent to all nodes
+      1725       1408        176      826.6      478.5  Message size sent to node 10
+      1725       1408        176      826.6      478.5  Message size sent to node 10 : MPI_Send() 
+      1725  2.478E+05       3872   1.14E+05  1.055E+05  Message size sent to node 11
+      1725  2.478E+05       3872   1.14E+05  1.055E+05  Message size sent to node 11 : MPI_Send() 
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 14
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 14 : MPI_Send() 
+      1725          8          8          8          0  Message size sent to node 26
+      1725          8          8          8          0  Message size sent to node 26 : MPI_Send() 
+      1725       1408        176      826.6      478.5  Message size sent to node 27
+      1725       1408        176      826.6      478.5  Message size sent to node 27 : MPI_Send() 
+      1725       1280        160      751.5        435  Message size sent to node 30
+      1725       1280        160      751.5        435  Message size sent to node 30 : MPI_Send() 
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 31
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 31 : MPI_Send() 
+---------------------------------------------------------------------------------------
+
+NODE 16;CONTEXT 0;THREAD 0:
+---------------------------------------------------------------------------------------
+%Time    Exclusive    Inclusive       #Call      #Subrs  Inclusive Name
+              msec   total msec                          usec/call 
+---------------------------------------------------------------------------------------
+100.0     9:08.656     9:21.808           1       40225  561808645 .TAU application
+  1.0        5,647        5,647         546           0      10343 MPI_Allreduce() 
+  1.0        5,561        5,561       12075           0        461 MPI_Wait() 
+  0.3        1,722        1,722       12075           0        143 MPI_Send() 
+  0.0          141          141           1           0     141426 MPI_Finalize() 
+  0.0           48           48           1           0      48611 MPI_Init() 
+  0.0           21           21       12075           0          2 MPI_Irecv() 
+  0.0            7            7        1726           0          4 MPI_Comm_size() 
+  0.0            2            2        1726           0          2 MPI_Comm_rank() 
+---------------------------------------------------------------------------------------
+
+USER EVENTS Profile :NODE 16, CONTEXT 0, THREAD 0
+---------------------------------------------------------------------------------------
+NumSamples   MaxValue   MinValue  MeanValue  Std. Dev.  Event Name
+---------------------------------------------------------------------------------------
+       546          8          8          8          0  Message size for all-reduce
+ 1.208E+04  2.478E+05          8  4.625E+04  8.369E+04  Message size received from all nodes
+ 1.208E+04  2.478E+05          8  4.625E+04  8.369E+04  Message size received in wait
+ 1.208E+04  2.478E+05          8  4.625E+04  8.369E+04  Message size received in wait : MPI_Wait() 
+ 1.208E+04  2.478E+05          8  4.625E+04  8.369E+04  Message size sent to all nodes
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 0
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 0 : MPI_Send() 
+      1725       1280        160      751.5        435  Message size sent to node 1
+      1725       1280        160      751.5        435  Message size sent to node 1 : MPI_Send() 
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 17
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 17 : MPI_Send() 
+      1725  2.478E+05       3872   1.14E+05  1.055E+05  Message size sent to node 20
+      1725  2.478E+05       3872   1.14E+05  1.055E+05  Message size sent to node 20 : MPI_Send() 
+      1725       1408        176      826.6      478.5  Message size sent to node 21
+      1725       1408        176      826.6      478.5  Message size sent to node 21 : MPI_Send() 
+      1725       1408        176      826.6      478.5  Message size sent to node 4
+      1725       1408        176      826.6      478.5  Message size sent to node 4 : MPI_Send() 
+      1725          8          8          8          0  Message size sent to node 5
+      1725          8          8          8          0  Message size sent to node 5 : MPI_Send() 
+---------------------------------------------------------------------------------------
+
+NODE 17;CONTEXT 0;THREAD 0:
+---------------------------------------------------------------------------------------
+%Time    Exclusive    Inclusive       #Call      #Subrs  Inclusive Name
+              msec   total msec                          usec/call 
+---------------------------------------------------------------------------------------
+100.0     9:10.232     9:21.808           1       60925  561808952 .TAU application
+  0.9        5,193        5,193         546           0       9511 MPI_Allreduce() 
+  0.8        4,552        4,552       18975           0        240 MPI_Wait() 
+  0.3        1,616        1,616       18975           0         85 MPI_Send() 
+  0.0          129          129           1           0     129085 MPI_Finalize() 
+  0.0           48           48           1           0      48630 MPI_Init() 
+  0.0           27           27       18975           0          1 MPI_Irecv() 
+  0.0            6            6        1726           0          4 MPI_Comm_size() 
+  0.0            2            2        1726           0          1 MPI_Comm_rank() 
+---------------------------------------------------------------------------------------
+
+USER EVENTS Profile :NODE 17, CONTEXT 0, THREAD 0
+---------------------------------------------------------------------------------------
+NumSamples   MaxValue   MinValue  MeanValue  Std. Dev.  Event Name
+---------------------------------------------------------------------------------------
+       546          8          8          8          0  Message size for all-reduce
+ 1.898E+04  2.478E+05          8    3.9E+04  7.817E+04  Message size received from all nodes
+ 1.898E+04  2.478E+05          8    3.9E+04  7.817E+04  Message size received in wait
+ 1.898E+04  2.478E+05          8    3.9E+04  7.817E+04  Message size received in wait : MPI_Wait() 
+ 1.898E+04  2.478E+05          8    3.9E+04  7.817E+04  Message size sent to all nodes
+      1725       1280        160      751.5        435  Message size sent to node 0
+      1725       1280        160      751.5        435  Message size sent to node 0 : MPI_Send() 
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 1
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 1 : MPI_Send() 
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 16
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 16 : MPI_Send() 
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 18
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 18 : MPI_Send() 
+      1725       1280        160      751.5        435  Message size sent to node 2
+      1725       1280        160      751.5        435  Message size sent to node 2 : MPI_Send() 
+      1725       1408        176      826.6      478.5  Message size sent to node 20
+      1725       1408        176      826.6      478.5  Message size sent to node 20 : MPI_Send() 
+      1725  2.478E+05       3872   1.14E+05  1.055E+05  Message size sent to node 21
+      1725  2.478E+05       3872   1.14E+05  1.055E+05  Message size sent to node 21 : MPI_Send() 
+      1725       1408        176      826.6      478.5  Message size sent to node 22
+      1725       1408        176      826.6      478.5  Message size sent to node 22 : MPI_Send() 
+      1725          8          8          8          0  Message size sent to node 4
+      1725          8          8          8          0  Message size sent to node 4 : MPI_Send() 
+      1725       1408        176      826.6      478.5  Message size sent to node 5
+      1725       1408        176      826.6      478.5  Message size sent to node 5 : MPI_Send() 
+      1725          8          8          8          0  Message size sent to node 6
+      1725          8          8          8          0  Message size sent to node 6 : MPI_Send() 
+---------------------------------------------------------------------------------------
+
+NODE 18;CONTEXT 0;THREAD 0:
+---------------------------------------------------------------------------------------
+%Time    Exclusive    Inclusive       #Call      #Subrs  Inclusive Name
+              msec   total msec                          usec/call 
+---------------------------------------------------------------------------------------
+100.0     9:10.796     9:21.808           1       60925  561808955 .TAU application
+  0.9        5,081        5,081         546           0       9306 MPI_Allreduce() 
+  0.8        4,399        4,399       18975           0        232 MPI_Wait() 
+  0.2        1,311        1,311       18975           0         69 MPI_Send() 
+  0.0          140          140           1           0     140424 MPI_Finalize() 
+  0.0           48           48           1           0      48687 MPI_Init() 
+  0.0           24           24       18975           0          1 MPI_Irecv() 
+  0.0            5            5        1726           0          3 MPI_Comm_size() 
+  0.0            2            2        1726           0          1 MPI_Comm_rank() 
+---------------------------------------------------------------------------------------
+
+USER EVENTS Profile :NODE 18, CONTEXT 0, THREAD 0
+---------------------------------------------------------------------------------------
+NumSamples   MaxValue   MinValue  MeanValue  Std. Dev.  Event Name
+---------------------------------------------------------------------------------------
+       546          8          8          8          0  Message size for all-reduce
+ 1.898E+04  2.478E+05          8    3.9E+04  7.817E+04  Message size received from all nodes
+ 1.898E+04  2.478E+05          8    3.9E+04  7.817E+04  Message size received in wait
+ 1.898E+04  2.478E+05          8    3.9E+04  7.817E+04  Message size received in wait : MPI_Wait() 
+ 1.898E+04  2.478E+05          8    3.9E+04  7.817E+04  Message size sent to all nodes
+      1725       1280        160      751.5        435  Message size sent to node 1
+      1725       1280        160      751.5        435  Message size sent to node 1 : MPI_Send() 
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 17
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 17 : MPI_Send() 
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 19
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 19 : MPI_Send() 
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 2
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 2 : MPI_Send() 
+      1725       1408        176      826.6      478.5  Message size sent to node 21
+      1725       1408        176      826.6      478.5  Message size sent to node 21 : MPI_Send() 
+      1725  2.478E+05       3872   1.14E+05  1.055E+05  Message size sent to node 22
+      1725  2.478E+05       3872   1.14E+05  1.055E+05  Message size sent to node 22 : MPI_Send() 
+      1725       1408        176      826.6      478.5  Message size sent to node 23
+      1725       1408        176      826.6      478.5  Message size sent to node 23 : MPI_Send() 
+      1725       1280        160      751.5        435  Message size sent to node 3
+      1725       1280        160      751.5        435  Message size sent to node 3 : MPI_Send() 
+      1725          8          8          8          0  Message size sent to node 5
+      1725          8          8          8          0  Message size sent to node 5 : MPI_Send() 
+      1725       1408        176      826.6      478.5  Message size sent to node 6
+      1725       1408        176      826.6      478.5  Message size sent to node 6 : MPI_Send() 
+      1725          8          8          8          0  Message size sent to node 7
+      1725          8          8          8          0  Message size sent to node 7 : MPI_Send() 
+---------------------------------------------------------------------------------------
+
+NODE 19;CONTEXT 0;THREAD 0:
+---------------------------------------------------------------------------------------
+%Time    Exclusive    Inclusive       #Call      #Subrs  Inclusive Name
+              msec   total msec                          usec/call 
+---------------------------------------------------------------------------------------
+100.0     9:09.887     9:21.807           1       40225  561807541 .TAU application
+  1.0        5,490        5,490         546           0      10057 MPI_Allreduce() 
+  0.8        4,249        4,249       12075           0        352 MPI_Wait() 
+  0.4        2,021        2,021       12075           0        167 MPI_Send() 
+  0.0           83           83           1           0      83050 MPI_Finalize() 
+  0.0           48           48           1           0      48663 MPI_Init() 
+  0.0           18           18       12075           0          2 MPI_Irecv() 
+  0.0            5            5        1726           0          3 MPI_Comm_size() 
+  0.0            2            2        1726           0          1 MPI_Comm_rank() 
+---------------------------------------------------------------------------------------
+
+USER EVENTS Profile :NODE 19, CONTEXT 0, THREAD 0
+---------------------------------------------------------------------------------------
+NumSamples   MaxValue   MinValue  MeanValue  Std. Dev.  Event Name
+---------------------------------------------------------------------------------------
+       546          8          8          8          0  Message size for all-reduce
+ 1.208E+04  2.478E+05          8  4.625E+04  8.369E+04  Message size received from all nodes
+ 1.208E+04  2.478E+05          8  4.625E+04  8.369E+04  Message size received in wait
+ 1.208E+04  2.478E+05          8  4.625E+04  8.369E+04  Message size received in wait : MPI_Wait() 
+ 1.208E+04  2.478E+05          8  4.625E+04  8.369E+04  Message size sent to all nodes
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 18
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 18 : MPI_Send() 
+      1725       1280        160      751.5        435  Message size sent to node 2
+      1725       1280        160      751.5        435  Message size sent to node 2 : MPI_Send() 
+      1725       1408        176      826.6      478.5  Message size sent to node 22
+      1725       1408        176      826.6      478.5  Message size sent to node 22 : MPI_Send() 
+      1725  2.478E+05       3872   1.14E+05  1.055E+05  Message size sent to node 23
+      1725  2.478E+05       3872   1.14E+05  1.055E+05  Message size sent to node 23 : MPI_Send() 
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 3
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 3 : MPI_Send() 
+      1725          8          8          8          0  Message size sent to node 6
+      1725          8          8          8          0  Message size sent to node 6 : MPI_Send() 
+      1725       1408        176      826.6      478.5  Message size sent to node 7
+      1725       1408        176      826.6      478.5  Message size sent to node 7 : MPI_Send() 
+---------------------------------------------------------------------------------------
+
+NODE 20;CONTEXT 0;THREAD 0:
+---------------------------------------------------------------------------------------
+%Time    Exclusive    Inclusive       #Call      #Subrs  Inclusive Name
+              msec   total msec                          usec/call 
+---------------------------------------------------------------------------------------
+100.0     9:08.523     9:21.808           1       60925  561808273 .TAU application
+  1.0        5,889        5,889         546           0      10787 MPI_Allreduce() 
+  1.0        5,484        5,484       18975           0        289 MPI_Wait() 
+  0.3        1,719        1,719       18975           0         91 MPI_Send() 
+  0.0          104          104           1           0     104902 MPI_Finalize() 
+  0.0           48           48           1           0      48795 MPI_Init() 
+  0.0           28           28       18975           0          1 MPI_Irecv() 
+  0.0            6            6        1726           0          4 MPI_Comm_size() 
+  0.0            2            2        1726           0          1 MPI_Comm_rank() 
+---------------------------------------------------------------------------------------
+
+USER EVENTS Profile :NODE 20, CONTEXT 0, THREAD 0
+---------------------------------------------------------------------------------------
+NumSamples   MaxValue   MinValue  MeanValue  Std. Dev.  Event Name
+---------------------------------------------------------------------------------------
+       546          8          8          8          0  Message size for all-reduce
+ 1.898E+04  2.478E+05          8  3.995E+04   8.01E+04  Message size received from all nodes
+ 1.898E+04  2.478E+05          8  3.995E+04   8.01E+04  Message size received in wait
+ 1.898E+04  2.478E+05          8  3.995E+04   8.01E+04  Message size received in wait : MPI_Wait() 
+ 1.898E+04  2.478E+05          8  3.995E+04   8.01E+04  Message size sent to all nodes
+      1725       1408        176      826.6      478.5  Message size sent to node 0
+      1725       1408        176      826.6      478.5  Message size sent to node 0 : MPI_Send() 
+      1725          8          8          8          0  Message size sent to node 1
+      1725          8          8          8          0  Message size sent to node 1 : MPI_Send() 
+      1725  2.478E+05       3872   1.14E+05  1.055E+05  Message size sent to node 16
+      1725  2.478E+05       3872   1.14E+05  1.055E+05  Message size sent to node 16 : MPI_Send() 
+      1725       1408        176      826.6      478.5  Message size sent to node 17
+      1725       1408        176      826.6      478.5  Message size sent to node 17 : MPI_Send() 
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 21
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 21 : MPI_Send() 
+      1725  2.478E+05       3872   1.14E+05  1.055E+05  Message size sent to node 24
+      1725  2.478E+05       3872   1.14E+05  1.055E+05  Message size sent to node 24 : MPI_Send() 
+      1725       1408        176      826.6      478.5  Message size sent to node 25
+      1725       1408        176      826.6      478.5  Message size sent to node 25 : MPI_Send() 
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 4
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 4 : MPI_Send() 
+      1725       1280        160      751.5        435  Message size sent to node 5
+      1725       1280        160      751.5        435  Message size sent to node 5 : MPI_Send() 
+      1725       1408        176      826.6      478.5  Message size sent to node 8
+      1725       1408        176      826.6      478.5  Message size sent to node 8 : MPI_Send() 
+      1725          8          8          8          0  Message size sent to node 9
+      1725          8          8          8          0  Message size sent to node 9 : MPI_Send() 
+---------------------------------------------------------------------------------------
+
+NODE 21;CONTEXT 0;THREAD 0:
+---------------------------------------------------------------------------------------
+%Time    Exclusive    Inclusive       #Call      #Subrs  Inclusive Name
+              msec   total msec                          usec/call 
+---------------------------------------------------------------------------------------
+100.0     9:10.252     9:21.807           1       91975  561807689 .TAU application
+  0.9        5,145        5,145       29325           0        175 MPI_Wait() 
+  0.9        4,976        4,976         546           0       9114 MPI_Allreduce() 
+  0.2        1,222        1,222       29325           0         42 MPI_Send() 
+  0.0          115          115           1           0     115182 MPI_Finalize() 
+  0.0           48           48           1           0      48735 MPI_Init() 
+  0.0           39           39       29325           0          1 MPI_Irecv() 
+  0.0            5            5        1726           0          3 MPI_Comm_size() 
+  0.0            2            2        1726           0          1 MPI_Comm_rank() 
+---------------------------------------------------------------------------------------
+
+USER EVENTS Profile :NODE 21, CONTEXT 0, THREAD 0
+---------------------------------------------------------------------------------------
+NumSamples   MaxValue   MinValue  MeanValue  Std. Dev.  Event Name
+---------------------------------------------------------------------------------------
+       546          8          8          8          0  Message size for all-reduce
+ 2.932E+04  2.478E+05          8  3.209E+04  7.299E+04  Message size received from all nodes
+ 2.932E+04  2.478E+05          8  3.209E+04  7.299E+04  Message size received in wait
+ 2.932E+04  2.478E+05          8  3.209E+04  7.299E+04  Message size received in wait : MPI_Wait() 
+ 2.932E+04  2.478E+05          8  3.209E+04  7.299E+04  Message size sent to all nodes
+      1725          8          8          8          0  Message size sent to node 0
+      1725          8          8          8          0  Message size sent to node 0 : MPI_Send() 
+      1725       1408        176      826.6      478.5  Message size sent to node 1
+      1725       1408        176      826.6      478.5  Message size sent to node 1 : MPI_Send() 
+      1725          8          8          8          0  Message size sent to node 10
+      1725          8          8          8          0  Message size sent to node 10 : MPI_Send() 
+      1725       1408        176      826.6      478.5  Message size sent to node 16
+      1725       1408        176      826.6      478.5  Message size sent to node 16 : MPI_Send() 
+      1725  2.478E+05       3872   1.14E+05  1.055E+05  Message size sent to node 17
+      1725  2.478E+05       3872   1.14E+05  1.055E+05  Message size sent to node 17 : MPI_Send() 
+      1725       1408        176      826.6      478.5  Message size sent to node 18
+      1725       1408        176      826.6      478.5  Message size sent to node 18 : MPI_Send() 
+      1725          8          8          8          0  Message size sent to node 2
+      1725          8          8          8          0  Message size sent to node 2 : MPI_Send() 
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 20
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 20 : MPI_Send() 
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 22
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 22 : MPI_Send() 
+      1725       1408        176      826.6      478.5  Message size sent to node 24
+      1725       1408        176      826.6      478.5  Message size sent to node 24 : MPI_Send() 
+      1725  2.478E+05       3872   1.14E+05  1.055E+05  Message size sent to node 25
+      1725  2.478E+05       3872   1.14E+05  1.055E+05  Message size sent to node 25 : MPI_Send() 
+      1725       1408        176      826.6      478.5  Message size sent to node 26
+      1725       1408        176      826.6      478.5  Message size sent to node 26 : MPI_Send() 
+      1725       1280        160      751.5        435  Message size sent to node 4
+      1725       1280        160      751.5        435  Message size sent to node 4 : MPI_Send() 
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 5
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 5 : MPI_Send() 
+      1725       1280        160      751.5        435  Message size sent to node 6
+      1725       1280        160      751.5        435  Message size sent to node 6 : MPI_Send() 
+      1725          8          8          8          0  Message size sent to node 8
+      1725          8          8          8          0  Message size sent to node 8 : MPI_Send() 
+      1725       1408        176      826.6      478.5  Message size sent to node 9
+      1725       1408        176      826.6      478.5  Message size sent to node 9 : MPI_Send() 
+---------------------------------------------------------------------------------------
+
+NODE 22;CONTEXT 0;THREAD 0:
+---------------------------------------------------------------------------------------
+%Time    Exclusive    Inclusive       #Call      #Subrs  Inclusive Name
+              msec   total msec                          usec/call 
+---------------------------------------------------------------------------------------
+100.0     9:11.399     9:21.808           1       91975  561808791 .TAU application
+  0.8        4,452        4,452         546           0       8156 MPI_Allreduce() 
+  0.8        4,246        4,246       29325           0        145 MPI_Wait() 
+  0.3        1,510        1,510       29325           0         52 MPI_Send() 
+  0.0          106          106           1           0     106563 MPI_Finalize() 
+  0.0           48           48           1           0      48626 MPI_Init() 
+  0.0           36           36       29325           0          1 MPI_Irecv() 
+  0.0            5            5        1726           0          3 MPI_Comm_size() 
+  0.0            1            1        1726           0          1 MPI_Comm_rank() 
+---------------------------------------------------------------------------------------
+
+USER EVENTS Profile :NODE 22, CONTEXT 0, THREAD 0
+---------------------------------------------------------------------------------------
+NumSamples   MaxValue   MinValue  MeanValue  Std. Dev.  Event Name
+---------------------------------------------------------------------------------------
+       546          8          8          8          0  Message size for all-reduce
+ 2.932E+04  2.478E+05          8  3.209E+04  7.299E+04  Message size received from all nodes
+ 2.932E+04  2.478E+05          8  3.209E+04  7.299E+04  Message size received in wait
+ 2.932E+04  2.478E+05          8  3.209E+04  7.299E+04  Message size received in wait : MPI_Wait() 
+ 2.932E+04  2.478E+05          8  3.209E+04  7.299E+04  Message size sent to all nodes
+      1725          8          8          8          0  Message size sent to node 1
+      1725          8          8          8          0  Message size sent to node 1 : MPI_Send() 
+      1725       1408        176      826.6      478.5  Message size sent to node 10
+      1725       1408        176      826.6      478.5  Message size sent to node 10 : MPI_Send() 
+      1725          8          8          8          0  Message size sent to node 11
+      1725          8          8          8          0  Message size sent to node 11 : MPI_Send() 
+      1725       1408        176      826.6      478.5  Message size sent to node 17
+      1725       1408        176      826.6      478.5  Message size sent to node 17 : MPI_Send() 
+      1725  2.478E+05       3872   1.14E+05  1.055E+05  Message size sent to node 18
+      1725  2.478E+05       3872   1.14E+05  1.055E+05  Message size sent to node 18 : MPI_Send() 
+      1725       1408        176      826.6      478.5  Message size sent to node 19
+      1725       1408        176      826.6      478.5  Message size sent to node 19 : MPI_Send() 
+      1725       1408        176      826.6      478.5  Message size sent to node 2
+      1725       1408        176      826.6      478.5  Message size sent to node 2 : MPI_Send() 
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 21
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 21 : MPI_Send() 
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 23
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 23 : MPI_Send() 
+      1725       1408        176      826.6      478.5  Message size sent to node 25
+      1725       1408        176      826.6      478.5  Message size sent to node 25 : MPI_Send() 
+      1725  2.478E+05       3872   1.14E+05  1.055E+05  Message size sent to node 26
+      1725  2.478E+05       3872   1.14E+05  1.055E+05  Message size sent to node 26 : MPI_Send() 
+      1725       1408        176      826.6      478.5  Message size sent to node 27
+      1725       1408        176      826.6      478.5  Message size sent to node 27 : MPI_Send() 
+      1725          8          8          8          0  Message size sent to node 3
+      1725          8          8          8          0  Message size sent to node 3 : MPI_Send() 
+      1725       1280        160      751.5        435  Message size sent to node 5
+      1725       1280        160      751.5        435  Message size sent to node 5 : MPI_Send() 
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 6
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 6 : MPI_Send() 
+      1725       1280        160      751.5        435  Message size sent to node 7
+      1725       1280        160      751.5        435  Message size sent to node 7 : MPI_Send() 
+      1725          8          8          8          0  Message size sent to node 9
+      1725          8          8          8          0  Message size sent to node 9 : MPI_Send() 
+---------------------------------------------------------------------------------------
+
+NODE 23;CONTEXT 0;THREAD 0:
+---------------------------------------------------------------------------------------
+%Time    Exclusive    Inclusive       #Call      #Subrs  Inclusive Name
+              msec   total msec                          usec/call 
+---------------------------------------------------------------------------------------
+100.0     9:10.598     9:21.813           1       60925  561813001 .TAU application
+  0.9        5,146        5,146         546           0       9426 MPI_Allreduce() 
+  0.7        4,174        4,174       18975           0        220 MPI_Wait() 
+  0.3        1,654        1,654       18975           0         87 MPI_Send() 
+  0.0          156          156           1           0     156179 MPI_Finalize() 
+  0.0           48           48           1           0      48654 MPI_Init() 
+  0.0           26           26       18975           0          1 MPI_Irecv() 
+  0.0            5            5        1726           0          3 MPI_Comm_size() 
+  0.0            2            2        1726           0          1 MPI_Comm_rank() 
+---------------------------------------------------------------------------------------
+
+USER EVENTS Profile :NODE 23, CONTEXT 0, THREAD 0
+---------------------------------------------------------------------------------------
+NumSamples   MaxValue   MinValue  MeanValue  Std. Dev.  Event Name
+---------------------------------------------------------------------------------------
+       546          8          8          8          0  Message size for all-reduce
+ 1.898E+04  2.478E+05          8  3.995E+04   8.01E+04  Message size received from all nodes
+ 1.898E+04  2.478E+05          8  3.995E+04   8.01E+04  Message size received in wait
+ 1.898E+04  2.478E+05          8  3.995E+04   8.01E+04  Message size received in wait : MPI_Wait() 
+ 1.898E+04  2.478E+05          8  3.995E+04   8.01E+04  Message size sent to all nodes
+      1725          8          8          8          0  Message size sent to node 10
+      1725          8          8          8          0  Message size sent to node 10 : MPI_Send() 
+      1725       1408        176      826.6      478.5  Message size sent to node 11
+      1725       1408        176      826.6      478.5  Message size sent to node 11 : MPI_Send() 
+      1725       1408        176      826.6      478.5  Message size sent to node 18
+      1725       1408        176      826.6      478.5  Message size sent to node 18 : MPI_Send() 
+      1725  2.478E+05       3872   1.14E+05  1.055E+05  Message size sent to node 19
+      1725  2.478E+05       3872   1.14E+05  1.055E+05  Message size sent to node 19 : MPI_Send() 
+      1725          8          8          8          0  Message size sent to node 2
+      1725          8          8          8          0  Message size sent to node 2 : MPI_Send() 
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 22
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 22 : MPI_Send() 
+      1725       1408        176      826.6      478.5  Message size sent to node 26
+      1725       1408        176      826.6      478.5  Message size sent to node 26 : MPI_Send() 
+      1725  2.478E+05       3872   1.14E+05  1.055E+05  Message size sent to node 27
+      1725  2.478E+05       3872   1.14E+05  1.055E+05  Message size sent to node 27 : MPI_Send() 
+      1725       1408        176      826.6      478.5  Message size sent to node 3
+      1725       1408        176      826.6      478.5  Message size sent to node 3 : MPI_Send() 
+      1725       1280        160      751.5        435  Message size sent to node 6
+      1725       1280        160      751.5        435  Message size sent to node 6 : MPI_Send() 
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 7
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 7 : MPI_Send() 
+---------------------------------------------------------------------------------------
+
+NODE 24;CONTEXT 0;THREAD 0:
+---------------------------------------------------------------------------------------
+%Time    Exclusive    Inclusive       #Call      #Subrs  Inclusive Name
+              msec   total msec                          usec/call 
+---------------------------------------------------------------------------------------
+100.0     5:32.824     9:21.807           1       60925  561807754 .TAU application
+ 19.4     1:48.850     1:48.850         546           0     199360 MPI_Allreduce() 
+ 12.4     1:09.464     1:09.464       18975           0       3661 MPI_Send() 
+  8.9       50,279       50,279       18975           0       2650 MPI_Wait() 
+  0.1          317          317           1           0     317962 MPI_Finalize() 
+  0.0           48           48           1           0      48752 MPI_Init() 
+  0.0           17           17       18975           0          1 MPI_Irecv() 
+  0.0            3            3        1726           0          2 MPI_Comm_size() 
+  0.0            1            1        1726           0          1 MPI_Comm_rank() 
+---------------------------------------------------------------------------------------
+
+USER EVENTS Profile :NODE 24, CONTEXT 0, THREAD 0
+---------------------------------------------------------------------------------------
+NumSamples   MaxValue   MinValue  MeanValue  Std. Dev.  Event Name
+---------------------------------------------------------------------------------------
+       546          8          8          8          0  Message size for all-reduce
+ 1.898E+04  2.478E+05          8  3.995E+04   8.01E+04  Message size received from all nodes
+ 1.898E+04  2.478E+05          8  3.995E+04   8.01E+04  Message size received in wait
+ 1.898E+04  2.478E+05          8  3.995E+04   8.01E+04  Message size received in wait : MPI_Wait() 
+ 1.898E+04  2.478E+05          8  3.995E+04   8.01E+04  Message size sent to all nodes
+      1725       1408        176      826.6      478.5  Message size sent to node 12
+      1725       1408        176      826.6      478.5  Message size sent to node 12 : MPI_Send() 
+      1725          8          8          8          0  Message size sent to node 13
+      1725          8          8          8          0  Message size sent to node 13 : MPI_Send() 
+      1725  2.478E+05       3872   1.14E+05  1.055E+05  Message size sent to node 20
+      1725  2.478E+05       3872   1.14E+05  1.055E+05  Message size sent to node 20 : MPI_Send() 
+      1725       1408        176      826.6      478.5  Message size sent to node 21
+      1725       1408        176      826.6      478.5  Message size sent to node 21 : MPI_Send() 
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 25
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 25 : MPI_Send() 
+      1725  2.478E+05       3872   1.14E+05  1.055E+05  Message size sent to node 28
+      1725  2.478E+05       3872   1.14E+05  1.055E+05  Message size sent to node 28 : MPI_Send() 
+      1725       1408        176      826.6      478.5  Message size sent to node 29
+      1725       1408        176      826.6      478.5  Message size sent to node 29 : MPI_Send() 
+      1725       1408        176      826.6      478.5  Message size sent to node 4
+      1725       1408        176      826.6      478.5  Message size sent to node 4 : MPI_Send() 
+      1725          8          8          8          0  Message size sent to node 5
+      1725          8          8          8          0  Message size sent to node 5 : MPI_Send() 
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 8
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 8 : MPI_Send() 
+      1725       1280        160      751.5        435  Message size sent to node 9
+      1725       1280        160      751.5        435  Message size sent to node 9 : MPI_Send() 
+---------------------------------------------------------------------------------------
+
+NODE 25;CONTEXT 0;THREAD 0:
+---------------------------------------------------------------------------------------
+%Time    Exclusive    Inclusive       #Call      #Subrs  Inclusive Name
+              msec   total msec                          usec/call 
+---------------------------------------------------------------------------------------
+100.0     5:31.653     9:21.807           1       91975  561807811 .TAU application
+ 19.5     1:49.462     1:49.462         546           0     200481 MPI_Allreduce() 
+ 12.5     1:10.158     1:10.158       29325           0       2392 MPI_Send() 
+  8.9       50,171       50,171       29325           0       1711 MPI_Wait() 
+  0.0          280          280           1           0     280606 MPI_Finalize() 
+  0.0           48           48           1           0      48753 MPI_Init() 
+  0.0           26           26       29325           0          1 MPI_Irecv() 
+  0.0            3            3        1726           0          2 MPI_Comm_size() 
+  0.0            1            1        1726           0          1 MPI_Comm_rank() 
+---------------------------------------------------------------------------------------
+
+USER EVENTS Profile :NODE 25, CONTEXT 0, THREAD 0
+---------------------------------------------------------------------------------------
+NumSamples   MaxValue   MinValue  MeanValue  Std. Dev.  Event Name
+---------------------------------------------------------------------------------------
+       546          8          8          8          0  Message size for all-reduce
+ 2.932E+04  2.478E+05          8  3.209E+04  7.299E+04  Message size received from all nodes
+ 2.932E+04  2.478E+05          8  3.209E+04  7.299E+04  Message size received in wait
+ 2.932E+04  2.478E+05          8  3.209E+04  7.299E+04  Message size received in wait : MPI_Wait() 
+ 2.932E+04  2.478E+05          8  3.209E+04  7.299E+04  Message size sent to all nodes
+      1725       1280        160      751.5        435  Message size sent to node 10
+      1725       1280        160      751.5        435  Message size sent to node 10 : MPI_Send() 
+      1725          8          8          8          0  Message size sent to node 12
+      1725          8          8          8          0  Message size sent to node 12 : MPI_Send() 
+      1725       1408        176      826.6      478.5  Message size sent to node 13
+      1725       1408        176      826.6      478.5  Message size sent to node 13 : MPI_Send() 
+      1725          8          8          8          0  Message size sent to node 14
+      1725          8          8          8          0  Message size sent to node 14 : MPI_Send() 
+      1725       1408        176      826.6      478.5  Message size sent to node 20
+      1725       1408        176      826.6      478.5  Message size sent to node 20 : MPI_Send() 
+      1725  2.478E+05       3872   1.14E+05  1.055E+05  Message size sent to node 21
+      1725  2.478E+05       3872   1.14E+05  1.055E+05  Message size sent to node 21 : MPI_Send() 
+      1725       1408        176      826.6      478.5  Message size sent to node 22
+      1725       1408        176      826.6      478.5  Message size sent to node 22 : MPI_Send() 
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 24
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 24 : MPI_Send() 
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 26
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 26 : MPI_Send() 
+      1725       1408        176      826.6      478.5  Message size sent to node 28
+      1725       1408        176      826.6      478.5  Message size sent to node 28 : MPI_Send() 
+      1725  2.478E+05       3872   1.14E+05  1.055E+05  Message size sent to node 29
+      1725  2.478E+05       3872   1.14E+05  1.055E+05  Message size sent to node 29 : MPI_Send() 
+      1725       1408        176      826.6      478.5  Message size sent to node 30
+      1725       1408        176      826.6      478.5  Message size sent to node 30 : MPI_Send() 
+      1725          8          8          8          0  Message size sent to node 4
+      1725          8          8          8          0  Message size sent to node 4 : MPI_Send() 
+      1725       1408        176      826.6      478.5  Message size sent to node 5
+      1725       1408        176      826.6      478.5  Message size sent to node 5 : MPI_Send() 
+      1725          8          8          8          0  Message size sent to node 6
+      1725          8          8          8          0  Message size sent to node 6 : MPI_Send() 
+      1725       1280        160      751.5        435  Message size sent to node 8
+      1725       1280        160      751.5        435  Message size sent to node 8 : MPI_Send() 
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 9
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 9 : MPI_Send() 
+---------------------------------------------------------------------------------------
+
+NODE 26;CONTEXT 0;THREAD 0:
+---------------------------------------------------------------------------------------
+%Time    Exclusive    Inclusive       #Call      #Subrs  Inclusive Name
+              msec   total msec                          usec/call 
+---------------------------------------------------------------------------------------
+100.0     5:32.711     9:21.807           1       91975  561807664 .TAU application
+ 19.4     1:48.727     1:48.727         546           0     199134 MPI_Allreduce() 
+ 12.5     1:10.326     1:10.326       29325           0       2398 MPI_Send() 
+  8.8       49,702       49,702       29325           0       1695 MPI_Wait() 
+  0.0          261          261           1           0     261668 MPI_Finalize() 
+  0.0           48           48           1           0      48684 MPI_Init() 
+  0.0           24           24       29325           0          1 MPI_Irecv() 
+  0.0            3            3        1726           0          2 MPI_Comm_size() 
+  0.0            1            1        1726           0          1 MPI_Comm_rank() 
+---------------------------------------------------------------------------------------
+
+USER EVENTS Profile :NODE 26, CONTEXT 0, THREAD 0
+---------------------------------------------------------------------------------------
+NumSamples   MaxValue   MinValue  MeanValue  Std. Dev.  Event Name
+---------------------------------------------------------------------------------------
+       546          8          8          8          0  Message size for all-reduce
+ 2.932E+04  2.478E+05          8  3.209E+04  7.299E+04  Message size received from all nodes
+ 2.932E+04  2.478E+05          8  3.209E+04  7.299E+04  Message size received in wait
+ 2.932E+04  2.478E+05          8  3.209E+04  7.299E+04  Message size received in wait : MPI_Wait() 
+ 2.932E+04  2.478E+05          8  3.209E+04  7.299E+04  Message size sent to all nodes
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 10
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 10 : MPI_Send() 
+      1725       1280        160      751.5        435  Message size sent to node 11
+      1725       1280        160      751.5        435  Message size sent to node 11 : MPI_Send() 
+      1725          8          8          8          0  Message size sent to node 13
+      1725          8          8          8          0  Message size sent to node 13 : MPI_Send() 
+      1725       1408        176      826.6      478.5  Message size sent to node 14
+      1725       1408        176      826.6      478.5  Message size sent to node 14 : MPI_Send() 
+      1725          8          8          8          0  Message size sent to node 15
+      1725          8          8          8          0  Message size sent to node 15 : MPI_Send() 
+      1725       1408        176      826.6      478.5  Message size sent to node 21
+      1725       1408        176      826.6      478.5  Message size sent to node 21 : MPI_Send() 
+      1725  2.478E+05       3872   1.14E+05  1.055E+05  Message size sent to node 22
+      1725  2.478E+05       3872   1.14E+05  1.055E+05  Message size sent to node 22 : MPI_Send() 
+      1725       1408        176      826.6      478.5  Message size sent to node 23
+      1725       1408        176      826.6      478.5  Message size sent to node 23 : MPI_Send() 
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 25
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 25 : MPI_Send() 
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 27
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 27 : MPI_Send() 
+      1725       1408        176      826.6      478.5  Message size sent to node 29
+      1725       1408        176      826.6      478.5  Message size sent to node 29 : MPI_Send() 
+      1725  2.478E+05       3872   1.14E+05  1.055E+05  Message size sent to node 30
+      1725  2.478E+05       3872   1.14E+05  1.055E+05  Message size sent to node 30 : MPI_Send() 
+      1725       1408        176      826.6      478.5  Message size sent to node 31
+      1725       1408        176      826.6      478.5  Message size sent to node 31 : MPI_Send() 
+      1725          8          8          8          0  Message size sent to node 5
+      1725          8          8          8          0  Message size sent to node 5 : MPI_Send() 
+      1725       1408        176      826.6      478.5  Message size sent to node 6
+      1725       1408        176      826.6      478.5  Message size sent to node 6 : MPI_Send() 
+      1725          8          8          8          0  Message size sent to node 7
+      1725          8          8          8          0  Message size sent to node 7 : MPI_Send() 
+      1725       1280        160      751.5        435  Message size sent to node 9
+      1725       1280        160      751.5        435  Message size sent to node 9 : MPI_Send() 
+---------------------------------------------------------------------------------------
+
+NODE 27;CONTEXT 0;THREAD 0:
+---------------------------------------------------------------------------------------
+%Time    Exclusive    Inclusive       #Call      #Subrs  Inclusive Name
+              msec   total msec                          usec/call 
+---------------------------------------------------------------------------------------
+100.0     5:31.083     9:21.807           1       60925  561807174 .TAU application
+ 19.6     1:49.854     1:49.854         546           0     201198 MPI_Allreduce() 
+ 12.6     1:10.655     1:10.655       18975           0       3724 MPI_Send() 
+  8.9       49,898       49,898       18975           0       2630 MPI_Wait() 
+  0.0          243          243           1           0     243856 MPI_Finalize() 
+  0.0           48           48           1           0      48813 MPI_Init() 
+  0.0           17           17       18975           0          1 MPI_Irecv() 
+  0.0            4            4        1726           0          2 MPI_Comm_size() 
+  0.0            1            1        1726           0          1 MPI_Comm_rank() 
+---------------------------------------------------------------------------------------
+
+USER EVENTS Profile :NODE 27, CONTEXT 0, THREAD 0
+---------------------------------------------------------------------------------------
+NumSamples   MaxValue   MinValue  MeanValue  Std. Dev.  Event Name
+---------------------------------------------------------------------------------------
+       546          8          8          8          0  Message size for all-reduce
+ 1.898E+04  2.478E+05          8  3.995E+04   8.01E+04  Message size received from all nodes
+ 1.898E+04  2.478E+05          8  3.995E+04   8.01E+04  Message size received in wait
+ 1.898E+04  2.478E+05          8  3.995E+04   8.01E+04  Message size received in wait : MPI_Wait() 
+ 1.898E+04  2.478E+05          8  3.995E+04   8.01E+04  Message size sent to all nodes
+      1725       1280        160      751.5        435  Message size sent to node 10
+      1725       1280        160      751.5        435  Message size sent to node 10 : MPI_Send() 
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 11
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 11 : MPI_Send() 
+      1725          8          8          8          0  Message size sent to node 14
+      1725          8          8          8          0  Message size sent to node 14 : MPI_Send() 
+      1725       1408        176      826.6      478.5  Message size sent to node 15
+      1725       1408        176      826.6      478.5  Message size sent to node 15 : MPI_Send() 
+      1725       1408        176      826.6      478.5  Message size sent to node 22
+      1725       1408        176      826.6      478.5  Message size sent to node 22 : MPI_Send() 
+      1725  2.478E+05       3872   1.14E+05  1.055E+05  Message size sent to node 23
+      1725  2.478E+05       3872   1.14E+05  1.055E+05  Message size sent to node 23 : MPI_Send() 
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 26
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 26 : MPI_Send() 
+      1725       1408        176      826.6      478.5  Message size sent to node 30
+      1725       1408        176      826.6      478.5  Message size sent to node 30 : MPI_Send() 
+      1725  2.478E+05       3872   1.14E+05  1.055E+05  Message size sent to node 31
+      1725  2.478E+05       3872   1.14E+05  1.055E+05  Message size sent to node 31 : MPI_Send() 
+      1725          8          8          8          0  Message size sent to node 6
+      1725          8          8          8          0  Message size sent to node 6 : MPI_Send() 
+      1725       1408        176      826.6      478.5  Message size sent to node 7
+      1725       1408        176      826.6      478.5  Message size sent to node 7 : MPI_Send() 
+---------------------------------------------------------------------------------------
+
+NODE 28;CONTEXT 0;THREAD 0:
+---------------------------------------------------------------------------------------
+%Time    Exclusive    Inclusive       #Call      #Subrs  Inclusive Name
+              msec   total msec                          usec/call 
+---------------------------------------------------------------------------------------
+100.0     5:30.191     9:21.807           1       40225  561807858 .TAU application
+ 19.6     1:50.168     1:50.168         546           0     201773 MPI_Allreduce() 
+ 12.4     1:09.822     1:09.822       12075           0       5782 MPI_Send() 
+  9.1       51,293       51,293       12075           0       4248 MPI_Wait() 
+  0.0          267          267           1           0     267038 MPI_Finalize() 
+  0.0           48           48           1           0      48683 MPI_Init() 
+  0.0           11           11       12075           0          1 MPI_Irecv() 
+  0.0            3            3        1726           0          2 MPI_Comm_size() 
+  0.0            1            1        1726           0          1 MPI_Comm_rank() 
+---------------------------------------------------------------------------------------
+
+USER EVENTS Profile :NODE 28, CONTEXT 0, THREAD 0
+---------------------------------------------------------------------------------------
+NumSamples   MaxValue   MinValue  MeanValue  Std. Dev.  Event Name
+---------------------------------------------------------------------------------------
+       546          8          8          8          0  Message size for all-reduce
+ 1.208E+04  2.478E+05          8  4.625E+04  8.369E+04  Message size received from all nodes
+ 1.208E+04  2.478E+05          8  4.625E+04  8.369E+04  Message size received in wait
+ 1.208E+04  2.478E+05          8  4.625E+04  8.369E+04  Message size received in wait : MPI_Wait() 
+ 1.208E+04  2.478E+05          8  4.625E+04  8.369E+04  Message size sent to all nodes
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 12
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 12 : MPI_Send() 
+      1725       1280        160      751.5        435  Message size sent to node 13
+      1725       1280        160      751.5        435  Message size sent to node 13 : MPI_Send() 
+      1725  2.478E+05       3872   1.14E+05  1.055E+05  Message size sent to node 24
+      1725  2.478E+05       3872   1.14E+05  1.055E+05  Message size sent to node 24 : MPI_Send() 
+      1725       1408        176      826.6      478.5  Message size sent to node 25
+      1725       1408        176      826.6      478.5  Message size sent to node 25 : MPI_Send() 
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 29
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 29 : MPI_Send() 
+      1725       1408        176      826.6      478.5  Message size sent to node 8
+      1725       1408        176      826.6      478.5  Message size sent to node 8 : MPI_Send() 
+      1725          8          8          8          0  Message size sent to node 9
+      1725          8          8          8          0  Message size sent to node 9 : MPI_Send() 
+---------------------------------------------------------------------------------------
+
+NODE 29;CONTEXT 0;THREAD 0:
+---------------------------------------------------------------------------------------
+%Time    Exclusive    Inclusive       #Call      #Subrs  Inclusive Name
+              msec   total msec                          usec/call 
+---------------------------------------------------------------------------------------
+100.0     5:30.515     9:21.808           1       60925  561808020 .TAU application
+ 19.6     1:50.108     1:50.108         546           0     201663 MPI_Allreduce() 
+ 12.5     1:10.168     1:10.168       18975           0       3698 MPI_Send() 
+  9.0       50,659       50,659       18975           0       2670 MPI_Wait() 
+  0.1          284          284           1           0     284235 MPI_Finalize() 
+  0.0           48           48           1           0      48691 MPI_Init() 
+  0.0           17           17       18975           0          1 MPI_Irecv() 
+  0.0            4            4        1726           0          2 MPI_Comm_size() 
+  0.0            1            1        1726           0          1 MPI_Comm_rank() 
+---------------------------------------------------------------------------------------
+
+USER EVENTS Profile :NODE 29, CONTEXT 0, THREAD 0
+---------------------------------------------------------------------------------------
+NumSamples   MaxValue   MinValue  MeanValue  Std. Dev.  Event Name
+---------------------------------------------------------------------------------------
+       546          8          8          8          0  Message size for all-reduce
+ 1.898E+04  2.478E+05          8    3.9E+04  7.817E+04  Message size received from all nodes
+ 1.898E+04  2.478E+05          8    3.9E+04  7.817E+04  Message size received in wait
+ 1.898E+04  2.478E+05          8    3.9E+04  7.817E+04  Message size received in wait : MPI_Wait() 
+ 1.898E+04  2.478E+05          8    3.9E+04  7.817E+04  Message size sent to all nodes
+      1725          8          8          8          0  Message size sent to node 10
+      1725          8          8          8          0  Message size sent to node 10 : MPI_Send() 
+      1725       1280        160      751.5        435  Message size sent to node 12
+      1725       1280        160      751.5        435  Message size sent to node 12 : MPI_Send() 
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 13
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 13 : MPI_Send() 
+      1725       1280        160      751.5        435  Message size sent to node 14
+      1725       1280        160      751.5        435  Message size sent to node 14 : MPI_Send() 
+      1725       1408        176      826.6      478.5  Message size sent to node 24
+      1725       1408        176      826.6      478.5  Message size sent to node 24 : MPI_Send() 
+      1725  2.478E+05       3872   1.14E+05  1.055E+05  Message size sent to node 25
+      1725  2.478E+05       3872   1.14E+05  1.055E+05  Message size sent to node 25 : MPI_Send() 
+      1725       1408        176      826.6      478.5  Message size sent to node 26
+      1725       1408        176      826.6      478.5  Message size sent to node 26 : MPI_Send() 
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 28
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 28 : MPI_Send() 
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 30
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 30 : MPI_Send() 
+      1725          8          8          8          0  Message size sent to node 8
+      1725          8          8          8          0  Message size sent to node 8 : MPI_Send() 
+      1725       1408        176      826.6      478.5  Message size sent to node 9
+      1725       1408        176      826.6      478.5  Message size sent to node 9 : MPI_Send() 
+---------------------------------------------------------------------------------------
+
+NODE 30;CONTEXT 0;THREAD 0:
+---------------------------------------------------------------------------------------
+%Time    Exclusive    Inclusive       #Call      #Subrs  Inclusive Name
+              msec   total msec                          usec/call 
+---------------------------------------------------------------------------------------
+100.0     5:31.887     9:21.807           1       60925  561807460 .TAU application
+ 19.5     1:49.633     1:49.633         546           0     200795 MPI_Allreduce() 
+ 12.4     1:09.401     1:09.401       18975           0       3658 MPI_Send() 
+  9.0       50,507       50,507       18975           0       2662 MPI_Wait() 
+  0.1          306          306           1           0     306236 MPI_Finalize() 
+  0.0           48           48           1           0      48626 MPI_Init() 
+  0.0           17           17       18975           0          1 MPI_Irecv() 
+  0.0            3            3        1726           0          2 MPI_Comm_size() 
+  0.0            1            1        1726           0          1 MPI_Comm_rank() 
+---------------------------------------------------------------------------------------
+
+USER EVENTS Profile :NODE 30, CONTEXT 0, THREAD 0
+---------------------------------------------------------------------------------------
+NumSamples   MaxValue   MinValue  MeanValue  Std. Dev.  Event Name
+---------------------------------------------------------------------------------------
+       546          8          8          8          0  Message size for all-reduce
+ 1.898E+04  2.478E+05          8    3.9E+04  7.817E+04  Message size received from all nodes
+ 1.898E+04  2.478E+05          8    3.9E+04  7.817E+04  Message size received in wait
+ 1.898E+04  2.478E+05          8    3.9E+04  7.817E+04  Message size received in wait : MPI_Wait() 
+ 1.898E+04  2.478E+05          8    3.9E+04  7.817E+04  Message size sent to all nodes
+      1725       1408        176      826.6      478.5  Message size sent to node 10
+      1725       1408        176      826.6      478.5  Message size sent to node 10 : MPI_Send() 
+      1725          8          8          8          0  Message size sent to node 11
+      1725          8          8          8          0  Message size sent to node 11 : MPI_Send() 
+      1725       1280        160      751.5        435  Message size sent to node 13
+      1725       1280        160      751.5        435  Message size sent to node 13 : MPI_Send() 
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 14
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 14 : MPI_Send() 
+      1725       1280        160      751.5        435  Message size sent to node 15
+      1725       1280        160      751.5        435  Message size sent to node 15 : MPI_Send() 
+      1725       1408        176      826.6      478.5  Message size sent to node 25
+      1725       1408        176      826.6      478.5  Message size sent to node 25 : MPI_Send() 
+      1725  2.478E+05       3872   1.14E+05  1.055E+05  Message size sent to node 26
+      1725  2.478E+05       3872   1.14E+05  1.055E+05  Message size sent to node 26 : MPI_Send() 
+      1725       1408        176      826.6      478.5  Message size sent to node 27
+      1725       1408        176      826.6      478.5  Message size sent to node 27 : MPI_Send() 
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 29
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 29 : MPI_Send() 
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 31
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 31 : MPI_Send() 
+      1725          8          8          8          0  Message size sent to node 9
+      1725          8          8          8          0  Message size sent to node 9 : MPI_Send() 
+---------------------------------------------------------------------------------------
+
+NODE 31;CONTEXT 0;THREAD 0:
+---------------------------------------------------------------------------------------
+%Time    Exclusive    Inclusive       #Call      #Subrs  Inclusive Name
+              msec   total msec                          usec/call 
+---------------------------------------------------------------------------------------
+100.0     5:31.727     9:21.807           1       40225  561807130 .TAU application
+ 19.5     1:49.496     1:49.496         546           0     200542 MPI_Allreduce() 
+ 12.2     1:08.302     1:08.302       12075           0       5657 MPI_Send() 
+  9.2       51,930       51,930       12075           0       4301 MPI_Wait() 
+  0.1          285          285           1           0     285142 MPI_Finalize() 
+  0.0           48           48           1           0      48653 MPI_Init() 
+  0.0           11           11       12075           0          1 MPI_Irecv() 
+  0.0            3            3        1726           0          2 MPI_Comm_size() 
+  0.0            1            1        1726           0          1 MPI_Comm_rank() 
+---------------------------------------------------------------------------------------
+
+USER EVENTS Profile :NODE 31, CONTEXT 0, THREAD 0
+---------------------------------------------------------------------------------------
+NumSamples   MaxValue   MinValue  MeanValue  Std. Dev.  Event Name
+---------------------------------------------------------------------------------------
+       546          8          8          8          0  Message size for all-reduce
+ 1.208E+04  2.478E+05          8  4.625E+04  8.369E+04  Message size received from all nodes
+ 1.208E+04  2.478E+05          8  4.625E+04  8.369E+04  Message size received in wait
+ 1.208E+04  2.478E+05          8  4.625E+04  8.369E+04  Message size received in wait : MPI_Wait() 
+ 1.208E+04  2.478E+05          8  4.625E+04  8.369E+04  Message size sent to all nodes
+      1725          8          8          8          0  Message size sent to node 10
+      1725          8          8          8          0  Message size sent to node 10 : MPI_Send() 
+      1725       1408        176      826.6      478.5  Message size sent to node 11
+      1725       1408        176      826.6      478.5  Message size sent to node 11 : MPI_Send() 
+      1725       1280        160      751.5        435  Message size sent to node 14
+      1725       1280        160      751.5        435  Message size sent to node 14 : MPI_Send() 
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 15
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 15 : MPI_Send() 
+      1725       1408        176      826.6      478.5  Message size sent to node 26
+      1725       1408        176      826.6      478.5  Message size sent to node 26 : MPI_Send() 
+      1725  2.478E+05       3872   1.14E+05  1.055E+05  Message size sent to node 27
+      1725  2.478E+05       3872   1.14E+05  1.055E+05  Message size sent to node 27 : MPI_Send() 
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 30
+      1725  2.253E+05       3520  1.037E+05  9.588E+04  Message size sent to node 30 : MPI_Send() 
+---------------------------------------------------------------------------------------
+
+FUNCTION SUMMARY (total):
+---------------------------------------------------------------------------------------
+%Time    Exclusive    Inclusive       #Call      #Subrs  Inclusive Name
+              msec   total msec                          usec/call 
+---------------------------------------------------------------------------------------
+100.0  4:23:57.368  4:59:37.870          32  2.0324E+06  561808446 .TAU application
+  5.6    16:49.863    16:49.863       17472           0      57799 MPI_Allreduce() 
+  3.3     9:58.276     9:58.276      634800           0        942 MPI_Send() 
+  2.9     8:44.765     8:44.765      634800           0        827 MPI_Wait() 
+  0.0        4,955        4,955          32           0     154847 MPI_Finalize() 
+  0.0        1,557        1,557          32           0      48685 MPI_Init() 
+  0.0          832          832      634800           0          1 MPI_Irecv() 
+  0.0          183          183       55232           0          3 MPI_Comm_size() 
+  0.0           68           68       55232           0          1 MPI_Comm_rank() 
+
+FUNCTION SUMMARY (mean):
+---------------------------------------------------------------------------------------
+%Time    Exclusive    Inclusive       #Call      #Subrs  Inclusive Name
+              msec   total msec                          usec/call 
+---------------------------------------------------------------------------------------
+100.0     8:14.917     9:21.808           1     63512.5  561808446 .TAU application
+  5.6       31,558       31,558         546           0      57799 MPI_Allreduce() 
+  3.3       18,696       18,696     19837.5           0        942 MPI_Send() 
+  2.9       16,398       16,398     19837.5           0        827 MPI_Wait() 
+  0.0          154          154           1           0     154847 MPI_Finalize() 
+  0.0           48           48           1           0      48685 MPI_Init() 
+  0.0           26           26     19837.5           0          1 MPI_Irecv() 
+  0.0            5            5        1726           0          3 MPI_Comm_size() 
+  0.0            2            2        1726           0          1 MPI_Comm_rank() 
