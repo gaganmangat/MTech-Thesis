@@ -1,0 +1,62 @@
+BIN_SIZE: 102400
+BIN_SIZE: 102400
+BIN_SIZE: 102400
+BIN_SIZE: 102400
+BIN_SIZE: 102400
+BIN_SIZE: 102400
+BIN_SIZE: 102400
+BIN_SIZE: 102400
+BIN_SIZE: 102400
+BIN_SIZE: 102400
+BIN_SIZE: 102400
+BIN_SIZE: 102400
+BIN_SIZE: 102400
+BIN_SIZE: 102400
+BIN_SIZE: 102400
+BIN_SIZE: 102400
+[0] MPI startup(): Multi-threaded optimized library
+[0] MPI startup(): shm data transfer mode
+[9] MPI startup(): shm data transfer mode
+[1] MPI startup(): shm data transfer mode
+[2] MPI startup(): shm data transfer mode
+[3] MPI startup(): shm data transfer mode
+[4] MPI startup(): shm data transfer mode
+[5] MPI startup(): shm data transfer mode
+[6] MPI startup(): shm data transfer mode
+[7] MPI startup(): shm data transfer mode
+[8] MPI startup(): shm data transfer mode
+[10] MPI startup(): shm data transfer mode
+[11] MPI startup(): shm data transfer mode
+[12] MPI startup(): shm data transfer mode
+[13] MPI startup(): shm data transfer mode
+[14] MPI startup(): shm data transfer mode
+[15] MPI startup(): shm data transfer mode
+[0] MPI startup(): Rank    Pid      Node name         Pin cpu
+[0] MPI startup(): 0       16474    hm047.iitk.ac.in  0
+[0] MPI startup(): 1       16475    hm047.iitk.ac.in  1
+[0] MPI startup(): 2       16476    hm047.iitk.ac.in  2
+[0] MPI startup(): 3       16477    hm047.iitk.ac.in  3
+[0] MPI startup(): 4       16478    hm047.iitk.ac.in  4
+[0] MPI startup(): 5       16479    hm047.iitk.ac.in  5
+[0] MPI startup(): 6       16480    hm047.iitk.ac.in  6
+[0] MPI startup(): 7       16481    hm047.iitk.ac.in  7
+[0] MPI startup(): 8       16482    hm047.iitk.ac.in  8
+[0] MPI startup(): 9       16483    hm047.iitk.ac.in  9
+[0] MPI startup(): 10      16484    hm047.iitk.ac.in  10
+[0] MPI startup(): 11      16485    hm047.iitk.ac.in  11
+[0] MPI startup(): 12      16486    hm047.iitk.ac.in  12
+[0] MPI startup(): 13      16487    hm047.iitk.ac.in  13
+[0] MPI startup(): 14      16488    hm047.iitk.ac.in  14
+[0] MPI startup(): 15      16489    hm047.iitk.ac.in  15
+sendfunctionname: MPI_Send[0x405dd6] 64
+sendfunctionname: MPI_Allreduce
+sendfunctionname: 
+sendfunctionname: MPI_Irecv[0x405d4e] 8
+sendfunctionname: MPI_Send[0x405dd6] 512
+sendfunctionname: MPI_Send
+sendfunctionname: MPI_Send[0x405dd6] 32768
+sendfunctionname: MPI_Send[0x405dd6] 128
+sendfunctionname: MPI_Send[0x405dd6] 256
+sendfunctionname: MPI_Send[0x405dd6] 8192
+sendfunctionname: MPI_Send[0x405dd6] 8
+sendfunctionname: MPI_Send[0x405dd6] 2048
