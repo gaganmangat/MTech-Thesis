@@ -1,0 +1,41 @@
+Intel(R) MPI Library Version 2018 Update 4
+
+Summary MPI Statistics
+Stats format: region
+Stats scope : full
+
+################################################################################
+#
+# command : /scratch/gagandeep20/benchmarks/hpcg/bin/xhpcg (completed)
+# host    : hm011.iitk.ac.in/x86_64_Linux   mpi_tasks : 16 on 1 nodes
+# start   : 06/01/22/14:13:40               wallclock : 316.000520 sec
+# stop    : 06/01/22/14:18:56               %comm     : 2.00
+# gbytes  : 0.00000e+00 total               gflop/sec : NA
+#
+################################################################################
+# region  : *   [ntasks] = 16
+#
+#                         [total]       <avg>         min           max
+# entries                 16            1             1             1             
+# wallclock               5055.21       315.951       315.885       316.001       
+# user                    4977.47       311.092       310.802       311.554       
+# system                  65.0968       4.06855       3.63608       4.32695       
+# mpi                     101.266       6.32913       3.72052       8.76274       
+# %comm                                 2.0032        1.17745       2.77374       
+# gflop/sec               NA            NA            NA            NA 
+# gbytes                  0             0             0             0             
+#
+#
+#                           [time]        [calls]       <%mpi>        <%wall>
+# MPI_Allreduce             51.7613       8880          51.11         1.02          
+# MPI_Wait                  30.2306       253152        29.85         0.60          
+# MPI_Send                  18.7035       253152        18.47         0.37          
+# MPI_Init                  0.393685      16            0.39          0.01          
+# MPI_Irecv                 0.147836      253152        0.15          0.00          
+# MPI_Type_size             0.0138967     515184        0.01          0.00          
+# MPI_Wtime                 0.00862217    57712         0.01          0.00          
+# MPI_Comm_size             0.00572991    28160         0.01          0.00          
+# MPI_Comm_rank             0.000900745   28160         0.00          0.00          
+# MPI_Finalize              1.74046e-05   16            0.00          0.00          
+# MPI_TOTAL                 101.266       1.39758e+06   100.00        2.00          
+################################################################################
